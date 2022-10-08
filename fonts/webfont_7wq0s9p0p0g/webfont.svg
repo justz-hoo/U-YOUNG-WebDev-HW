@@ -1,0 +1,48 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+
+<svg>
+<metadata>
+Created by webfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1288" vert-adv-y="1288" >
+  <font-face
+    
+    font-family="iconfont"
+    
+    font-weight="400"
+    
+    font-stretch="normal"
+    
+    units-per-em="1000"
+    
+    ascent="1104"
+    
+    descent="-285"
+    
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="uni2d" unicode="&#x2d;" d="M72 271L72 343L367 343L367 271L72 271Z"  horiz-adv-x="440" vert-adv-y="1000"  />
+
+    
+    <glyph glyph-name="uni47" unicode="&#x47;" d="M397-10Q316-10 260 5.50Q204 21 159.50 59.50Q115 98 93.50 169.50Q72 241 72 347Q72 540 157 622Q242 704 407 704Q523 704 588 677L588 597Q516 625 411 625Q349 625 306.50 613Q264 601 231 570.50Q198 540 182 485Q166 430 166 347Q166 260 181 204Q196 148 229 118.50Q262 89 303 78.50Q344 68 407 68Q474 68 520 81L520 296L381 296L381 372L606 372L606 19Q515-10 397-10Z"  horiz-adv-x="685" vert-adv-y="1000"  />
+
+    
+    <glyph glyph-name="uni4e" unicode="&#x4e;" d="M92 0L92 694L233 694L549 118L555 118L555 694L645 694L645 0L526 0L186 611L180 611L180 0L92 0Z"  horiz-adv-x="737" vert-adv-y="1000"  />
+
+    
+    <glyph glyph-name="uni4f" unicode="&#x4f;" d="M501.50 6.50Q501.50 6.50 474.75-1.75Q448-10 371-10Q294-10 241 6.50Q188 23 148.50 63Q109 103 90.50 173Q72 243 72 347Q72 450 90.50 520Q109 590 148.50 630Q188 670 241 687Q294 704 371 704Q448 704 501.50 687.50Q555 671 594 630.50Q633 590 651.50 520Q670 450 670 347Q670 243 651.50 173Q633 103 594 63Q555 23 501.50 6.50M371 67Q494 67 535.50 129Q577 191 577 347Q577 499 535 563.50Q493 628 371 628Q250 628 208 563.50Q166 499 166 347Q166 192 207.50 129.50Q249 67 371 67Z"  horiz-adv-x="743" vert-adv-y="1000"  />
+
+    
+    <glyph glyph-name="uni55" unicode="&#x55;" d="M548 46.50Q548 46.50 515.50 18.25Q483-10 350-10Q217-10 153 45Q89 100 89 224L89 694L178 694L178 244Q178 146 216 107.50Q254 69 351 69Q451 69 487.50 106.50Q524 144 524 244L524 694L613 694L613 224Q613 103 548 46.50Z"  horiz-adv-x="701" vert-adv-y="1000"  />
+
+    
+    <glyph glyph-name="uni59" unicode="&#x59;" d="M251 0L251 298L6 694L110 694L297 380L303 380L489 694L588 694L341 299L341 0L251 0Z"  horiz-adv-x="594" vert-adv-y="1000"  />
+
+    
+
+  </font>
+</defs></svg>

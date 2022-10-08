@@ -1,0 +1,64 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+
+<svg>
+<metadata>
+Created by webfont
+</metadata>
+<defs>
+
+<font id="Noto Sans S Chinese Thin" horiz-adv-x="1000" vert-adv-y="1000" >
+  <font-face
+    
+    font-family="Noto Sans S Chinese Thin"
+    
+    font-weight="100"
+    
+    font-stretch="normal"
+    
+    units-per-em="1000"
+    
+    panose-1="0 0 0 0 0 0 0 0 0 0"
+    
+    ascent="880"
+    
+    descent="-120"
+    
+    x-height="527"
+    
+    cap-height="726"
+    
+    bbox="-991 -1050 2930 1810"
+    
+    underline-thickness="50"
+    
+    underline-position="-100"
+    
+    unicode-range="U+0001-2CE93"
+    
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="cid14" unicode="&#x2d;" d="M44 291h239v-35h-239v35z"  horiz-adv-x="324"   />
+
+    
+    <glyph glyph-name="cid40" unicode="&#x47;" d="M368 -13q-69 0 -125.5 27t-96.5 76.5t-62 119t-22 155.5t22.5 155t64 118t100 75t130.5 26q36 0 66 -8t53.5 -20t42 -27.5t32.5 -30.5l-23 -25q-28 31 -69 53.5t-102 22.5q-65 0 -116.5 -23.5t-87.5 -68t-55 -107t-19 -140.5t18.5 -141.5t53 -108t85 -69t113.5 -24.5
+q52 0 98 15.5t73 42.5v238h-179v33h218v-283q-34 -36 -87.5 -58.5t-125.5 -22.5z"  horiz-adv-x="661"   />
+
+    
+    <glyph glyph-name="cid47" unicode="&#x4e;" d="M110 726h39l320 -529l83 -143h5q-6 105 -6 205v467h36v-726h-40l-319 529l-83 143h-4q2 -51 3 -99t1 -100v-473h-35v726z"  horiz-adv-x="696"   />
+
+    
+    <glyph glyph-name="cid48" unicode="&#x4f;" d="M357 22q57 0 104.5 24.5t81 69t52 108t18.5 141.5t-18.5 140.5t-52 107t-81 68t-104.5 23.5t-104.5 -23.5t-81 -68t-52 -107t-18.5 -140.5t18.5 -141.5t52 -108t81 -69t104.5 -24.5zM357 -13q-65 0 -119 27t-93 76.5t-61 119t-22 155.5t22 155t61 118t93 75t119 26
+q64 0 118.5 -26t93.5 -75t61 -118t22 -155t-22 -155.5t-61 -119t-93.5 -76.5t-118.5 -27z"  horiz-adv-x="714"   />
+
+    
+    <glyph glyph-name="cid54" unicode="&#x55;" d="M346 -13q-44 0 -87 13t-76.5 45t-54 87.5t-20.5 139.5v454h37v-446q0 -75 16.5 -124.5t44.5 -79t64.5 -42t75.5 -12.5q40 0 77 12.5t65.5 42t45.5 79t17 124.5v446h36v-454q0 -84 -21 -139.5t-55 -87.5t-77.5 -45t-87.5 -13z"  horiz-adv-x="694"   />
+
+    
+    <glyph glyph-name="cid58" unicode="&#x59;" d="M222 298l-218 428h40l115 -233q20 -41 39 -79.5t41 -78.5h4q22 40 41.5 79l39.5 79l116 233h37l-218 -428v-298h-37v298z"  horiz-adv-x="482"   />
+
+    
+
+  </font>
+</defs></svg>
