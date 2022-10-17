@@ -17,7 +17,12 @@ a{
     url('fonts/webfont_7wq0s9p0p0g/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
 }
 
+#sidebar{
+    width: 100%;
+    position: fixed;
+}
 .sidebar{
+    /*position: fixed;*/
     height: 50px;
     background-image: linear-gradient(to right, #e6ba50, #e8c45f, #ebcd6f, #eed67e, #f1df8e);
 }
@@ -31,14 +36,20 @@ a{
     text-shadow: 0 0 1px #aaaaaa;
 }
 
+.sidebar > nav > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
 .sidebar li{
+    text-decoration: none;
+    list-style: none;
     width: 200px;
     height: 50px;
     line-height: 50px;
-    /*border: 1px solid #ff972a;*/
     text-align: center;
-    display: inline-block;
-    margin: 0 5%;
 }
 
 .sidebar a:hover{
@@ -46,7 +57,6 @@ a{
 }
 
 .main{
-    /*background-image: url(images/About_us.jpg);*/
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,3 +91,203 @@ a{
 .main .main_text{
     margin-top: 20px;
 }
+
+section{
+    margin: 0 auto;
+}
+
+
+#plans{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #eed67e;
+    height: 800px;
+    margin: 0;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+#plans h1{
+    color: white;
+    text-shadow: 2px 2px 5px #e6ba50;
+    font-size: 36px;
+}
+
+#plans .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+}
+
+#plans .more{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#plans .more > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: solid 2px #ffffff;
+    border-radius: 25px 25px;
+    width: 150px;
+    height: 50px;
+}
+
+#plans .more div a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+}
+
+#plans .card{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+#plans .travel-entry{
+    width: 350px;
+    height: 350px;
+    background-color: #ffffff;
+}
+
+/*图片样式*/
+#plans .travel-entry .img{
+    display: block;
+    width: 350px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#plans .travel-entry .text{
+    /*设置内边距*/
+    padding: 24px;
+    font-size: 12px;
+    background-color: #fff;
+    /*设置盒子*/
+    box-sizing: border-box;
+    height: 100px;
+}
+
+#plans .travel-entry .text a{
+    text-decoration: none;
+    /*a默认是行内元素，不能设置高度，改为行内块，就可以设置行高了*/
+    display: inline-block;
+}
+
+#plans .travel-entry .text .pub_date,
+#plans .travel-entry .text .sum,
+#plans .travel-entry .text .comments{
+    color: lightgray;
+}
+
+/*#plans .travel-entry .text .comments{*/
+/*    color: #000000;*/
+/*}*/
+
+#plans .travel-entry .text .sum:hover{
+    color: #bf883b;
+}
+
+#plans .travel-entry .text .heading{
+    color: #bf883b;
+}
+
+/*设置文本间距*/
+/*info是块级元素 所以会有行高*/
+#plans .travel-entry .text .info{
+    margin-bottom: 16px;
+}
+
+#plans .travel-entry .text .info a{
+    margin-right: 5px;
+}
+
+#plans .travel-entry .text > h3{
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.intro{
+    width: 100%;
+    height: 500px;
+    background-color: #ebcd6f;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.intro > h1{
+    color: white;
+    text-shadow: 2px 2px 5px #e6ba50;
+    display: flex;
+    align-items: center;
+    width: 15%;
+    justify-content: center;
+    font-size: 36px;
+}
+
+.intro > div{
+    box-sizing: border-box;
+    /*border: solid 1px;*/
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.intro > div > p{
+    box-sizing: border-box;
+    /*border: solid 1px;*/
+    color: white;
+    font-size: 36px;
+    letter-spacing: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+}
+
+.intro  ul{
+    box-sizing: border-box;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 25px 25px;
+    border: solid 2px white;
+}
+
+.intro a{
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    padding-left: 2px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact_block{
+    background-color: #f1df8e;
+}
+
