@@ -57,6 +57,7 @@ a{
 }
 
 .main{
+    width: 100%;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,6 +99,7 @@ section{
 
 
 #plans{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     background-color: #eed67e;
@@ -291,3 +293,132 @@ section{
     background-color: #f1df8e;
 }
 
+#three .contact_block{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 600px;
+}
+
+
+.contact_block .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 15%;
+}
+.contact_block .left h2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px #e6ba50;
+    font-size: 36px;
+}
+
+.contact_block .left p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ad7c35;
+    letter-spacing: 2px;
+    text-shadow: 0 0 1px chocolate;
+    font-size: 18px;
+}
+
+.contact_block .split_style1{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    height: 100%;
+}
+
+.split_style1 > section {
+    width: 50%;
+    height: 100%;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.split_style1 section form:nth-of-type(1) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section form .fields {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section form .actions {
+    margin-top: 36px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #897436;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    flex-direction: column;
+}
+
+section form .actions a{
+    margin-left: 3px;
+    color: #ad7c35;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 6px;
+}
+
+/*伪类选择器，选择前两个*/
+.fields div:nth-of-type(-n+2) {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-evenly;*/
+    height: 25%;
+}
+.fields div:nth-last-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-evenly;*/
+    height: 50%;
+}
+
+.fields div label{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #ad7c35;
+    text-shadow: 0 0 2px #e8c45f;
+}
+
+.fields div input{
+    background-color: transparent;
+    outline-style: none;
+    border: 2px solid #897436;
+    width: 80%;
+    height: 36%;
+}
+
+.fields div textarea{
+    background-color: transparent;
+    width: 80%;
+    height: 80%;
+    border: 2px solid #897436;
+}
+
+/*@TODO:this*/
