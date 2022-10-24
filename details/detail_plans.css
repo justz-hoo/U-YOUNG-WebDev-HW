@@ -106,8 +106,10 @@ a{
 
 .highlight_card .pic{
     display: block;
-    width: 600px;
-    height: 450px;
+    /*width: 600px;*/
+    width: 60%;
+    /*height: 450px;*/
+    height: 90%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -118,8 +120,10 @@ a{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    width: 400px;
-    height: 450px;
+    /*width: 400px;*/
+    width: 40%;
+    /*height: 450px;*/
+    height: 90%;
 }
 
 .highlight_card .words .title{
