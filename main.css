@@ -315,8 +315,8 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 5px #e6ba50;
+    color: #ad7c35;
+    text-shadow: 1px 1px 2px #e8c45f;     /*e6ba50*/
     font-size: 36px;
 }
 
@@ -422,3 +422,105 @@ section form .actions a{
 }
 
 /*@TODO:this*/
+.split_style1 section:nth-of-type(2) .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    border-left: solid 4px #fff8ba;
+    /*border-right: solid 4px white;*/
+}
+    .split_style1 section:nth-of-type(2) .contact > li{
+        box-sizing: border-box;
+        height: 25%;
+        border-bottom: solid 2px #fff8ba;
+        border-top: solid 2px #fff8ba;
+        display: flex;
+        flex-direction: row;
+        padding-top: 60px;
+    }
+
+    .split_style1 section:nth-of-type(2) .contact > li:nth-of-type(1){
+        border-top: none;
+    }
+
+        .split_style1 section:nth-of-type(2) .contact li h3{
+            margin-left: 10%;
+            width: 20%;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            color: #ad7c35;
+            text-shadow: 0 0 2px #e8c45f;
+        }
+
+        .split_style1 section:nth-of-type(2) .contact > li span {
+            /*color: #ad7c35;*/
+            color: #897436;
+            text-shadow: 0 0 1px chocolate;
+            font-size: 14px;
+            line-height: 24px;
+            padding-left: 4%;
+        }
+
+        .split_style1 section:nth-of-type(2) .contact > li:nth-of-type(2) a {
+            color: #897436;
+            text-shadow: 0 0 1px chocolate;
+            font-size: 14px;
+            line-height: 24px;
+            padding-left: 4%;
+        }
+
+        .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul {
+            display: flex;
+            padding-left: 4%;
+        }
+
+            .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul > li:nth-of-type(n+2){
+                margin-left: 30px;
+            }
+
+            .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li{
+                box-sizing: border-box;
+                height: 50px;
+                width: 50px;
+                border-radius: 20px 20px;
+                border: solid 3px #fff8ba;
+            }
+            .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li a{
+                margin: 8px auto 0;
+                display: block;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+
+            .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li:nth-of-type(1) a{
+                background-image: url(images/微信.png);
+            }
+            .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li:nth-of-type(1) a:hover{
+                background-image: url(images/微信1.png);
+            }
+
+            .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li:nth-of-type(2) a{
+                background-image: url(images/微博.png);
+            }
+            .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li:nth-of-type(2) a:hover{
+                background-image: url(images/微博1.png);
+            }
+            .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li:nth-of-type(3) a{
+                height: 50px;
+                width: 50px;
+                margin-left: -4px;
+                margin-top: 12px;
+                font-size: 10px;
+                font-weight: bold;
+                color: #fff8ba;
+            }
+
+            .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li:nth-of-type(3) a:hover{
+                color: #1296db;
+            }
