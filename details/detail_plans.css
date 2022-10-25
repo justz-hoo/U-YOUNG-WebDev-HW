@@ -219,14 +219,17 @@ a{
 .travel_price{
     height: 530px;
     width: 100%;
-    /*height: 500px;*/
     background-color: #fffdef;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-evenly;
 }
-
+@media (max-width: 800px) {
+    .travel_price{
+        height: 800px;
+    }
+}
 .travel_price h1{
     color: #bf883b;
     text-shadow: 0 0 1px #e6ba50;
@@ -307,7 +310,11 @@ a{
     display: flex;
     justify-content: space-evenly;
 }
-
+@media (max-width: 980px){
+    .travel_time{
+        height: 500px;
+    }
+}
 .travel_time > h1{
     color: #bf883b;
     /*text-shadow: 2px 2px 5px #e6ba50;*/

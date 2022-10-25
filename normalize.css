@@ -36,6 +36,12 @@ a{
     text-shadow: 0 0 1px #aaaaaa;
 }
 
+@media (max-width: 800px) {
+    .sidebar a{
+        font-size: 10px;
+    }
+}
+
 .sidebar > nav > ul{
     display: flex;
     flex-direction: row;
@@ -63,6 +69,18 @@ a{
     background-repeat: no-repeat;
     height: 768px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 800px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .main h1{
@@ -71,7 +89,12 @@ a{
     color: white;
     text-align: center;
     text-shadow: 1px 1px 5px #666666;
-    margin-top: 13%;
+}
+
+@media (max-width: 800px) {
+    .main h1 {
+        font-size: 60px;
+    }
 }
 
 .main p{
@@ -81,12 +104,24 @@ a{
     text-shadow: 1px 1px 1px #000000;
 }
 
+@media (max-width: 800px) {
+    .main p {
+        font-size: 20px;
+    }
+}
+
 .main .title{
     font-family: 'iconfont', sans-serif;
     font-size: 40px;
     color: antiquewhite;
     font-weight: bold;
     text-shadow: 2px 2px 5px #e6ba50;
+}
+
+@media (max-width: 800px) {
+    .main .title {
+        font-size: 30px;
+    }
 }
 
 .main .main_text{
@@ -103,16 +138,30 @@ section{
     display: flex;
     justify-content: space-evenly;
     background-color: #eed67e;
-    height: 800px;
+    /*height: 800px;*/
     margin: 0;
     padding: 30px 0;
     box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+    #plans {
+        font-size: 18px;
+        flex-direction: column;
+    }
 }
 
 #plans h1{
     color: white;
     text-shadow: 2px 2px 5px #e6ba50;
     font-size: 36px;
+}
+
+@media (max-width: 800px) {
+    #plans h1 {
+        margin: 0 0 0 32px;
+        font-size: 18px;
+    }
 }
 
 #plans .left{
@@ -123,12 +172,28 @@ section{
     width: 15%;
 }
 
+@media (max-width: 800px) {
+    #plans .left {
+        width: 100%;
+        height: 80px;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+}
+
 #plans .more{
     display: flex;
     height: 200px;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+}
+
+@media (max-width: 800px) {
+    #plans .more {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 }
 
 #plans .more > div{
@@ -142,11 +207,26 @@ section{
     height: 50px;
 }
 
+@media (max-width: 800px) {
+    #plans .more > div {
+        width: 95px;
+        height: 35px;
+        border-radius: 15px 15px;
+        margin: 16px 0 32px 32px;
+    }
+}
+
 #plans .more div a{
     text-decoration: none;
     list-style: none;
     color: white;
     font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    #plans .more div a {
+        font-size: 12px;
+    }
 }
 
 #plans .card{
@@ -156,12 +236,29 @@ section{
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-around;
+    margin-bottom: -10px;
+}
+
+@media (max-width: 800px) {
+    #plans .card {
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 #plans .travel-entry{
     width: 350px;
     height: 350px;
     background-color: #ffffff;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    #plans .travel-entry {
+        width: 90%;
+        height: 360px;
+        margin-bottom: 160px;
+    }
 }
 
 /*图片样式*/
@@ -172,6 +269,13 @@ section{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+@media (max-width: 800px) {
+    #plans .travel-entry .img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 #plans .travel-entry .text{
@@ -233,6 +337,14 @@ section{
     justify-content: space-evenly;
 }
 
+@media (max-width: 800px) {
+    .intro {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 180px;
+    }
+}
+
 .intro > h1{
     color: white;
     text-shadow: 2px 2px 5px #e6ba50;
@@ -241,6 +353,13 @@ section{
     width: 15%;
     justify-content: center;
     font-size: 36px;
+}
+
+@media (max-width: 800px) {
+    .intro > h1{
+        margin-left: 60px;
+        font-size: 18px;
+    }
 }
 
 .intro > div{
@@ -253,6 +372,15 @@ section{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+@media (max-width: 800px) {
+    .intro > div {
+        align-items: flex-start;
+        width: 100%;
+        height: 100px;
+    }
+}
+
 .intro > div > p{
     box-sizing: border-box;
     /*border: solid 1px;*/
@@ -263,6 +391,15 @@ section{
     justify-content: center;
     align-items: center;
     width: 900px;
+}
+
+@media (max-width: 800px) {
+    .intro > div > p {
+        letter-spacing: 1px;
+        justify-content: flex-start;
+        font-size: 16px;
+        margin: 0 0 0 32px;
+    }
 }
 
 .intro  ul{
@@ -289,11 +426,22 @@ section{
     font-weight: bold;
 }
 
+@media (max-width: 800px) {
+    .intro  ul {
+        width: 70px;
+        height: 35px;
+        margin: 0 0 0 32px;
+    }
+    .intro a {
+        font-size: 12px;
+    }
+}
+
 .contact_block{
     background-color: #f1df8e;
 }
 
-#three .contact_block{
+.contact_block{
     margin: 0;
     padding: 0;
     display: flex;
@@ -302,6 +450,15 @@ section{
     height: 600px;
 }
 
+@media (max-width: 800px) {
+    .contact_block{
+        height: 660px;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
 
 .contact_block .left{
     display: flex;
@@ -310,6 +467,15 @@ section{
     height: 100%;
     width: 15%;
 }
+@media (max-width: 800px) {
+    .contact_block .left{
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 100px;
+        width: 100%;
+    }
+}
+
 .contact_block .left h2{
     width: 100%;
     display: flex;
@@ -318,6 +484,13 @@ section{
     color: #ad7c35;
     text-shadow: 1px 1px 2px #e8c45f;     /*e6ba50*/
     font-size: 36px;
+}
+
+@media (max-width: 800px) {
+    .contact_block .left h2{
+        font-size: 18px;
+        width: 50%;
+    }
 }
 
 .contact_block .left p{
@@ -331,6 +504,13 @@ section{
     font-size: 18px;
 }
 
+@media (max-width: 800px) {
+    .contact_block .left p{
+        width: 50%;
+        font-size: 12px;
+    }
+}
+
 .contact_block .split_style1{
     display: flex;
     flex-direction: row;
@@ -338,9 +518,23 @@ section{
     height: 100%;
 }
 
+@media (max-width: 800px){
+    .contact_block .split_style1{
+        height: 800px;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
 .split_style1 > section {
     width: 50%;
     height: 100%;
+}
+@media (max-width: 800px) {
+    .split_style1 > section{
+        width: 90%;
+        height: 40%;
+    }
 }
 
 li {
@@ -354,7 +548,6 @@ li {
     flex-direction: column;
     justify-content: center;
 }
-
 section form .fields {
     height: 70%;
     display: flex;
@@ -375,12 +568,30 @@ section form .actions {
     flex-direction: column;
 }
 
+@media (max-width: 800px) {
+    section form .actions{
+        margin: 10px 20px;
+        height: 25px;
+        width: 50px;
+        border-radius: 12px;
+    }
+}
+
 section form .actions a{
     margin-left: 3px;
     color: #ad7c35;
     font-weight: bold;
     font-size: 16px;
     letter-spacing: 6px;
+}
+
+@media (max-width: 800px) {
+    section form .actions a{
+        font-size: 12px;
+        margin-left: 3px;
+        line-height: 12px;
+        letter-spacing: 2px;
+    }
 }
 
 /*伪类选择器，选择前两个*/
@@ -390,11 +601,29 @@ section form .actions a{
     /*justify-content: space-evenly;*/
     height: 25%;
 }
+
+@media (max-width: 800px) {
+    .fields div:nth-of-type(-n+2){
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+    }
+}
 .fields div:nth-last-of-type(1) {
     display: flex;
     flex-direction: column;
     /*justify-content: space-evenly;*/
     height: 50%;
+}
+
+@media (max-width: 800px) {
+    .fields div:nth-last-of-type(1){
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+    }
 }
 
 .fields div label{
@@ -406,6 +635,13 @@ section form .actions a{
     text-shadow: 0 0 2px #e8c45f;
 }
 
+@media (max-width: 800px) {
+    .fields div label{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+}
+
 .fields div input{
     background-color: transparent;
     outline-style: none;
@@ -413,12 +649,23 @@ section form .actions a{
     width: 80%;
     height: 36%;
 }
+@media (max-width: 800px) {
+    .fields div input{
+        margin-left: 20px;
+    }
+}
 
 .fields div textarea{
     background-color: transparent;
     width: 80%;
     height: 80%;
     border: 2px solid #897436;
+}
+
+@media (max-width: 800px) {
+    .fields div textarea{
+        margin-left: 20px;
+    }
 }
 
 /*@TODO:this*/
@@ -430,6 +677,14 @@ section form .actions a{
     border-left: solid 4px #fff8ba;
     /*border-right: solid 4px white;*/
 }
+@media (max-width: 800px){
+    .split_style1 section:nth-of-type(2) .contact{
+        justify-content: left;
+        border-left: none;
+        border-top: solid 4px #fff8ba;
+    }
+}
+
     .split_style1 section:nth-of-type(2) .contact > li{
         box-sizing: border-box;
         height: 25%;
@@ -438,6 +693,16 @@ section form .actions a{
         display: flex;
         flex-direction: row;
         padding-top: 60px;
+    }
+    /* @TODO :-------------------------------*/
+    @media (max-width: 800px) {
+        .split_style1 section:nth-of-type(2) .contact > li{
+            align-items: center;
+            padding-top: 0;
+            height: 60px;
+            border-bottom: solid 4px #fff8ba;
+            border-top: none;
+        }
     }
 
     .split_style1 section:nth-of-type(2) .contact > li:nth-of-type(1){
@@ -453,6 +718,12 @@ section form .actions a{
             color: #ad7c35;
             text-shadow: 0 0 2px #e8c45f;
         }
+        @media (max-width: 800px) {
+            .split_style1 section:nth-of-type(2) .contact li h3{
+                font-size: 14px;
+                width: 80px;
+            }
+        }
 
         .split_style1 section:nth-of-type(2) .contact > li span {
             /*color: #ad7c35;*/
@@ -463,6 +734,12 @@ section form .actions a{
             padding-left: 4%;
         }
 
+        @media (max-width: 800px) {
+            .split_style1 section:nth-of-type(2) .contact > li span{
+                font-size: 10px;
+            }
+        }
+
         .split_style1 section:nth-of-type(2) .contact > li:nth-of-type(2) a {
             color: #897436;
             text-shadow: 0 0 1px chocolate;
@@ -471,6 +748,11 @@ section form .actions a{
             padding-left: 4%;
         }
 
+        @media (max-width: 800px) {
+            .split_style1 section:nth-of-type(2) .contact > li:nth-of-type(2) a{
+                font-size: 10px;
+            }
+        }
         .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul {
             display: flex;
             padding-left: 4%;
@@ -487,6 +769,14 @@ section form .actions a{
                 border-radius: 20px 20px;
                 border: solid 3px #fff8ba;
             }
+            @media (max-width: 800px) {
+                .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li{
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 10px;
+                    border: solid 2px #fff8ba;
+                }
+            }
             .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li a{
                 margin: 8px auto 0;
                 display: block;
@@ -496,6 +786,13 @@ section form .actions a{
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
+            }
+            @media (max-width: 800px) {
+                .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li a{
+                    width: 20px;
+                    height: 20px;
+                    margin: 4px auto;
+                }
             }
 
             .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li:nth-of-type(1) a{
@@ -519,6 +816,13 @@ section form .actions a{
                 font-size: 10px;
                 font-weight: bold;
                 color: #fff8ba;
+            }
+            @media (max-width: 800px) {
+                .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li:nth-of-type(3) a{
+                    font-size: 12px;
+                    margin: 0 0 0 -11px;
+                    -webkit-transform: scale(0.7);
+                }
             }
 
             .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li:nth-of-type(3) a:hover{
