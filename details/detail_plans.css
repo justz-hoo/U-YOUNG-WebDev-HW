@@ -225,9 +225,9 @@ a{
     display: flex;
     justify-content: space-evenly;
 }
-@media (max-width: 800px) {
+@media (max-width: 980px) {
     .travel_price{
-        height: 800px;
+        height: 540px;
     }
 }
 .travel_price h1{
@@ -306,13 +306,14 @@ a{
 }
 
 .travel_time{
+    height: 210px;
     background-color: #fffdef;
     display: flex;
     justify-content: space-evenly;
 }
 @media (max-width: 980px){
     .travel_time{
-        height: 500px;
+        height: 200px;
     }
 }
 .travel_time > h1{
@@ -329,6 +330,9 @@ a{
 .travel_time .timetable{
     border-bottom: solid 4px #e6cf9c;
     width: 75%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
 .timetable > div{
