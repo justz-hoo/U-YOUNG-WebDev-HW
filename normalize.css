@@ -62,25 +62,17 @@ a{
     color: blanchedalmond;
 }
 
+
 .main{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 768px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-@media (max-width: 800px) {
-    .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 }
 
 .main h1{
@@ -128,9 +120,9 @@ a{
     margin-top: 20px;
 }
 
-section{
-    margin: 0 auto;
-}
+/*section{*/
+/*    margin: 0 auto;*/
+/*}*/
 
 
 #plans{
@@ -334,6 +326,7 @@ section{
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
@@ -357,7 +350,10 @@ section{
 
 @media (max-width: 800px) {
     .intro > h1{
-        margin-left: 60px;
+        margin-left: 32px;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
         font-size: 18px;
     }
 }
@@ -390,7 +386,6 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 900px;
 }
 
 @media (max-width: 800px) {
@@ -470,9 +465,9 @@ section{
 @media (max-width: 800px) {
     .contact_block .left{
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         height: 100px;
-        width: 100%;
+        width: 75%;
     }
 }
 
@@ -489,6 +484,8 @@ section{
 @media (max-width: 800px) {
     .contact_block .left h2{
         font-size: 18px;
+        justify-content: flex-start;
+        margin-left: 32px;
         width: 50%;
     }
 }
@@ -523,6 +520,7 @@ section{
         height: 800px;
         width: 100%;
         flex-direction: column;
+        justify-content: flex-start;
     }
 }
 
@@ -532,7 +530,7 @@ section{
 }
 @media (max-width: 800px) {
     .split_style1 > section{
-        width: 90%;
+        width: 100%;
         height: 40%;
     }
 }
@@ -555,6 +553,14 @@ section form .fields {
     justify-content: space-evenly;
 }
 
+@media (max-width: 800px) {
+    section form .fields {
+        height: 65%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
 section form .actions {
     margin-top: 36px;
     box-sizing: border-box;
@@ -570,7 +576,7 @@ section form .actions {
 
 @media (max-width: 800px) {
     section form .actions{
-        margin: 10px 20px;
+        margin: 2px 0 0 32px ;
         height: 25px;
         width: 50px;
         border-radius: 12px;
@@ -604,7 +610,7 @@ section form .actions a{
 
 @media (max-width: 800px) {
     .fields div:nth-of-type(-n+2){
-        margin-left: 20px;
+        margin-left: 32px;
         display: flex;
         flex-direction: row;
         height: 50px;
@@ -619,7 +625,7 @@ section form .actions a{
 
 @media (max-width: 800px) {
     .fields div:nth-last-of-type(1){
-        margin-left: 20px;
+        margin-left: 32px;
         display: flex;
         flex-direction: row;
         height: 50px;
@@ -637,6 +643,7 @@ section form .actions a{
 
 @media (max-width: 800px) {
     .fields div label{
+        width: 50px;
         font-size: 14px;
         letter-spacing: 2px;
     }
@@ -651,7 +658,7 @@ section form .actions a{
 }
 @media (max-width: 800px) {
     .fields div input{
-        margin-left: 20px;
+        margin-left: 0;
     }
 }
 
@@ -664,7 +671,7 @@ section form .actions a{
 
 @media (max-width: 800px) {
     .fields div textarea{
-        margin-left: 20px;
+        margin-left: 2px;
     }
 }
 
@@ -679,7 +686,7 @@ section form .actions a{
 }
 @media (max-width: 800px){
     .split_style1 section:nth-of-type(2) .contact{
-        justify-content: left;
+        justify-content: flex-start;
         border-left: none;
         border-top: solid 4px #fff8ba;
     }
@@ -702,6 +709,7 @@ section form .actions a{
             height: 60px;
             border-bottom: solid 4px #fff8ba;
             border-top: none;
+            width: 100%;
         }
     }
 
