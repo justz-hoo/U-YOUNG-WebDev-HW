@@ -202,8 +202,8 @@ a{
 @media (max-width: 800px) {
     #plans .more > div {
         width: 95px;
-        height: 35px;
-        border-radius: 15px 15px;
+        height: 36px;
+        border-radius: 18px 18px;
         margin: 16px 0 32px 32px;
     }
 }
@@ -351,7 +351,7 @@ a{
 @media (max-width: 800px) {
     .intro > h1{
         margin-left: 32px;
-        width: 100%;
+        width: 80%;
         justify-content: flex-start;
         align-items: flex-start;
         font-size: 18px;
