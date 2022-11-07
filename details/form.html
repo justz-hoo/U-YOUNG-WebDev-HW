@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="./form.css">
     <title>form</title>
 </head>
 <body>
@@ -18,263 +20,31 @@
             <!--亮点-->
             <div class="highlight">
                 <h2>行程亮点</h2>
-                <table>
-                    <tr>
-                        <td><h3>亮点1</h3></td>
-                        <td class="location">地点：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">说明：</td>
-                        <td>
-                            <textarea name="state" cols="30" rows="3"></textarea>
-                        </td>
-                        <td class="pic">图片：</td>
-                        <td>
-                            <input type="file" src="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>亮点2</h3></td>
-                        <td class="location">地点：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">说明：</td>
-                        <td>
-                            <textarea name="state" cols="30" rows="3"></textarea>
-                        </td>
-                        <td class="pic">图片：</td>
-                        <td>
-                            <input type="file" src="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>亮点3</h3></td>
-                        <td class="location">地点：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">说明：</td>
-                        <td>
-                            <textarea name="state" cols="30" rows="3"></textarea>
-                        </td>
-                        <td class="pic">图片：</td>
-                        <td>
-                            <input type="file" src="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>亮点4</h3></td>
-                        <td class="location">地点：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">说明：</td>
-                        <td>
-                            <textarea name="state" cols="30" rows="3"></textarea>
-                        </td>
-                        <td class="pic">图片：</td>
-                        <td>
-                            <input type="file" src="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>亮点5</h3></td>
-                        <td class="location">地点：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">说明：</td>
-                        <td>
-                            <textarea name="state" cols="30" rows="3"></textarea>
-                        </td>
-                        <td class="pic">图片：</td>
-                        <td>
-                            <input type="file" src="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>亮点6</h3></td>
-                        <td class="location">地点：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">说明：</td>
-                        <td>
-                            <textarea name="state" cols="30" rows="3"></textarea>
-                        </td>
-                        <td class="pic">图片：</td>
-                        <td>
-                            <input type="file" src="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>亮点7</h3></td>
-                        <td class="location">地点：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">说明：</td>
-                        <td>
-                            <textarea name="state" cols="30" rows="3"></textarea>
-                        </td>
-                        <td class="pic">图片：</td>
-                        <td>
-                            <input type="file" src="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>亮点8</h3></td>
-                        <td class="location">地点：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">说明：</td>
-                        <td>
-                            <textarea name="state" cols="30" rows="3"></textarea>
-                        </td>
-                        <td class="pic">图片：</td>
-                        <td>
-                            <input type="file" src="">
-                        </td>
+                <table class="highlight_tbl">
+                    <tr class="7777">
+                        <th>亮点编号</th>
+                        <th>地点</th>
+                        <th>说明</th>
+                        <th>图片</th>
                     </tr>
                 </table>
+                <button type="button" onclick="add1()">添加</button>
+                <button type="button" onclick="remove1()">删除</button>
             </div>
 
             <!--行程速览-->
             <div class="plans">
                 <h2>行程速览</h2>
-                <table>
+                <table class="plans_tbl">
                     <tr>
-                        <td><h3>Day1</h3></td>
-                        <td class="location">地点&说明：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">里程：</td>
-                        <td>
-                            <input type="number">
-                            <span>km</span>
-                        </td>
-                        <td class="lodging">住宿：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>Day2</h3></td>
-                        <td class="location">地点&说明：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">里程：</td>
-                        <td>
-                            <input type="number">
-                            <span>km</span>
-                        </td>
-                        <td class="lodging">住宿：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>Day3</h3></td>
-                        <td class="location">地点&说明：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">里程：</td>
-                        <td>
-                            <input type="number">
-                            <span>km</span>
-                        </td>
-                        <td class="lodging">住宿：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>Day4</h3></td>
-                        <td class="location">地点&说明：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">里程：</td>
-                        <td>
-                            <input type="number">
-                            <span>km</span>
-                        </td>
-                        <td class="lodging">住宿：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>Day5</h3></td>
-                        <td class="location">地点&说明：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">里程：</td>
-                        <td>
-                            <input type="number">
-                            <span>km</span>
-                        </td>
-                        <td class="lodging">住宿：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>Day6</h3></td>
-                        <td class="location">地点&说明：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">里程：</td>
-                        <td>
-                            <input type="number">
-                            <span>km</span>
-                        </td>
-                        <td class="lodging">住宿：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>Day7</h3></td>
-                        <td class="location">地点&说明：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">里程：</td>
-                        <td>
-                            <input type="number">
-                            <span>km</span>
-                        </td>
-                        <td class="lodging">住宿：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h3>Day8</h3></td>
-                        <td class="location">地点&说明：</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td class="state">里程：</td>
-                        <td>
-                            <input type="number">
-                            <span>km</span>
-                        </td>
-                        <td class="lodging">住宿：</td>
-                        <td>
-                            <input type="text">
-                        </td>
+                        <th>Day N</th>
+                        <th>地点&说明</th>
+                        <th>里程</th>
+                        <th>住宿</th>
                     </tr>
                 </table>
+                <button type="button" onclick="add2()">添加</button>
+                <button type="button" onclick="remove2()">删除</button>
             </div>
 
             <!--费用说明-->
@@ -343,89 +113,19 @@
             <!--活动报名时间-->
             <div class="time">
                 <h2>报名时间</h2>
-                <table>
+                <table class="time_tbl">
                     <tr>
-                        <td class="begin">
+                        <th class="begin">
                             出发时间
-                        </td>
-                        <td>-</td>
-                        <td class="end">
+                        </th>
+                        <th class="end">
                             回程时间
-                        </td>
+                        </th>
                     </tr>
-                    <tr>
-                        <td class="begin">
-                            <input type="date">
-                        </td>
-                        <td>-</td>
-                        <td class="end">
-                            <input type="date">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="begin">
-                            <input type="date">
-                        </td>
-                        <td>-</td>
-                        <td class="end">
-                            <input type="date">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="begin">
-                            <input type="date">
-                        </td>
-                        <td>-</td>
-                        <td class="end">
-                            <input type="date">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="begin">
-                            <input type="date">
-                        </td>
-                        <td>-</td>
-                        <td class="end">
-                            <input type="date">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="begin">
-                            <input type="date">
-                        </td>
-                        <td>-</td>
-                        <td class="end">
-                            <input type="date">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="begin">
-                            <input type="date">
-                        </td>
-                        <td>-</td>
-                        <td class="end">
-                            <input type="date">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="begin">
-                            <input type="date">
-                        </td>
-                        <td>-</td>
-                        <td class="end">
-                            <input type="date">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="begin">
-                            <input type="date">
-                        </td>
-                        <td>-</td>
-                        <td class="end">
-                            <input type="date">
-                        </td>
-                    </tr>
+
                 </table>
+                <button type="button" onclick="add3()">添加</button>
+                <button type="button" onclick="remove3()">删除</button>
             </div>
 
 
@@ -436,6 +136,6 @@
         </div>
     </form>
 </section>
-
+<script src="./form.js" type="text/javascript"></script>
 </body>
 </html>

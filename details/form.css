@@ -1,0 +1,21 @@
+table {
+    margin-top: 10px;
+    width: 60%;
+    border-collapse: collapse;
+    border: solid 2px black;
+}
+
+tr {
+    width: 100%;
+    border: solid 1px #666666;
+}
+
+th {
+    background-color: #eee;
+    height: 30px;
+}
+
+td {
+    border: solid 1px #666666;
+    height: 50px;
+}
