@@ -220,19 +220,27 @@
 <section id="travel_communicate">
     <div class="travel_communicate">
         <h1>交流讨论</h1>
-        <div class="comments">
-            <div class="likes">该项目共有人喜欢</div>
-            <h2>评论区</h2>
-        </div>
-        <div class="add_comment">
-            <h2>我的评论</h2>
-            <input type="text" id='ccc'>
-            <button type="button" id='post_comment'>发布评论</button>
-            <br>
-            <button type="button" id='like'>喜欢</button>
-            <button type="button" id='dislike'>不喜欢</button>
-        </div>
-        <div class="interested">
+        <div>
+            <div class="comments">
+                <div class="likes">
+                    该项目共收到<span class="number">0</span>次喜欢
+                </div>
+                <h2>评论区</h2>
+                <div class="contents">
+<!--                    在这里插入评论-->
+                </div>
+            </div>
+            <div class="add_comment">
+                <h3>我的短评</h3>
+                <div>
+                    <input type="text" id='ccc'>
+                    <button type="button" id='post_comment'>发布评论</button>
+                </div>
+                <div>
+                    <button type="button" id='like' onclick=add_like()>喜欢</button>
+                    <button type="button" id='dislike'>不喜欢</button>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -241,19 +249,27 @@
 $(document).ready(function (){
     $("#post_comment").click(function (){
         if ($("#ccc").val()!== ""){
-            $(".comments").append(
-                "<div>"+
-                $("#ccc").val()+
-                "<button class='del' onclick=del_comment()>delete</button>"+
-                "</div>"
+            $(".comments .contents").append(
+                '<div>'+
+                '<div>'+
+                $('#ccc').val()+
+                '</div>'+
+                '<button class="del" onclick=del_comment(this)>delete</button>'+
+                '</div>'
             );
             $("#ccc").val("");
         }
     })
+
 })
-function del_comment(){
-    let my_div = $(this).parent('div');
-    my_div.remove();
+function del_comment(now_comment){
+    $(now_comment).parent().remove();
+}
+let like_num = 0;
+function add_like(){
+    like_num += 1;
+    let num = document.querySelector(".number")
+    num.innerHTML = like_num.toString();
 }
 </script>
 </html>

@@ -306,7 +306,6 @@ a{
 }
 
 .travel_time{
-    height: 210px;
     background-color: #fffdef;
     display: flex;
     justify-content: space-evenly;
@@ -343,6 +342,101 @@ a{
 }
 
 .travel_communicate{
+    display: flex;
     width: 100%;
-    height: 200px;
+    /*height: 200px;*/
+    background-color: #fffdef;
+    justify-content: space-evenly;
 }
+.travel_communicate h1{
+    color: #bf883b;
+    text-shadow: 0 0 1px #e6ba50;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
+
+.travel_communicate > div{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.travel_communicate .comments{
+    width: 100%;
+}
+.travel_communicate .likes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+    font-size: 16px;
+}
+
+.travel_communicate .likes .number{
+    font-size: 32px;
+    color: #bf883b;
+}
+.travel_communicate h2{
+    color: #ad7c35;
+    margin-bottom: 10px;
+}
+
+.travel_communicate .contents{
+    width: 100%;
+}
+.travel_communicate .contents > div{
+    width: 100%;
+    height: 35px;
+    display: flex;
+}
+
+.travel_communicate .contents > div > div{
+    width: 80%;
+}
+
+.travel_communicate h3{
+    color: #ad7c35;
+}
+
+.travel_communicate .add_comment{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.travel_communicate .comments{
+    margin-bottom: 10px;
+}
+
+.add_comment input{
+    height: 30px;
+    width: 80%;
+    border: solid 2px #ad7c35;
+    background-color: #fffdef;
+}
+
+.add_comment button{
+    height: 30px;
+    width: 66px;
+    border: solid 2px #ad7c35;
+    border-radius: 15px;
+    margin-top: 10px;
+    background-color: #fffdef;
+}
+
+.add_comment div:nth-last-of-type(1){
+    margin-bottom: 10px;
+}
+
+.del{
+    height: 30px;
+    width: 66px;
+    margin-left: 10px;
+    border: solid 2px #ad7c35;
+    border-radius: 15px;
+    background-color: #fffdef;
+}
+
