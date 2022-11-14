@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>内蒙金秋</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="detail_plans.css">
 </head>
 <body>
@@ -216,9 +217,43 @@
     </div>
 </section>
 
-<!--<section id="travel_communicate">-->
-<!--    <h1>交流讨论</h1>-->
-
-<!--</section>-->
+<section id="travel_communicate">
+    <div class="travel_communicate">
+        <h1>交流讨论</h1>
+        <div class="comments">
+            <div class="likes">该项目共有人喜欢</div>
+            <h2>评论区</h2>
+        </div>
+        <div class="add_comment">
+            <h2>我的评论</h2>
+            <input type="text" id='ccc'>
+            <button type="button" id='post_comment'>发布评论</button>
+            <br>
+            <button type="button" id='like'>喜欢</button>
+            <button type="button" id='dislike'>不喜欢</button>
+        </div>
+        <div class="interested">
+        </div>
+    </div>
+</section>
 </body>
+<script>
+$(document).ready(function (){
+    $("#post_comment").click(function (){
+        if ($("#ccc").val()!== ""){
+            $(".comments").append(
+                "<div>"+
+                $("#ccc").val()+
+                "<button class='del' onclick=del_comment()>delete</button>"+
+                "</div>"
+            );
+            $("#ccc").val("");
+        }
+    })
+})
+function del_comment(){
+    let my_div = $(this).parent('div');
+    my_div.remove();
+}
+</script>
 </html>
