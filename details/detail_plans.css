@@ -137,6 +137,16 @@ a{
     letter-spacing: 2px;
 }
 
+.add_new_light .new_pic{
+    display: block;
+    width: 600px;
+    /*width: 60%;*/
+    height: 450px;
+    /*height: 90%;*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 
 .travel_plans{
     width: 100%;
@@ -167,7 +177,7 @@ a{
 }
 
 .travel_plans .details .plan_cards{
-    height: 500px;
+    /*height: 500px;*/
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
