@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, v, sans-serif
+}
+
+html {
+    font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,    v, sans-serif
 }
 
 a{
@@ -29,7 +34,7 @@ a{
 
 .sidebar a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1em;
     /*font-style: italic;*/
     font-weight: bold;
     color: white;

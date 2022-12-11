@@ -311,8 +311,11 @@ a{
     width: 50px;
 }
 
-.detail2 > div .line > div:nth-of-type(3){
-    width: 150px;
+/*.detail2 > div .line > div:nth-of-type(3){*/
+/*    width: 140px;*/
+/*}*/
+.line > div{
+    margin-right: 20px;
 }
 
 .travel_time{

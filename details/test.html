@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title></title>
-  <style>
-    img{
-      width:25px;
-    }
-  </style>
+  <meta charset="utf-8">
+  <title>菜鸟教程(runoob.com)</title>
 </head>
-<body>
-<img src="img/index.png"/>
-<select >
-  <option value="img/index.png">首页</option>
-  <option value="img/logo.png">动漫</option>
-  <option value="img/select.png">电影</option>
-  <option value="img/loading.gif">博客</option>
-</select>
-<script>
-  var main=document.querySelector("select");
-  var img=document.querySelector("img");
-  main.onchange=function(){
-    img.setAttribute("src",this.value);
-  }
-</script>
-</body>
+<head>
+  <script>
+    // 创建cookie
+    function setCookie(cname,cvalue,exdays){
+      var d = new Date();
+      d.setTime(d.getTime()+(exdays*24*60*60*1000));
+      var expires = "expires="+d.toGMTString();
+      document.cookie = cname+"="+cvalue; // 设置cookie用户名
+      document.cookie = expires;  // 设置cookie时间
+      var tmp = cname+"="+cvalue+"; "+expires;
+      console.log(cname, cvalue, expires);  // username piggy expires=Thu, 05 Jan 2023 11:02:46 GMT
+      console.log(document.cookie);  // username=piggy
+      console.log(tmp);  // username piggy expires=Thu, 05 Jan 2023 11:02:46 GMT
+    }
+    function getCookie(cname){
+      var name = cname + "=";  // cookie没有设置name='username=' ca=''
+      // cookie有设置name='username=' ca='username=piggy; ...(时间)'
+      var ca = document.cookie.split(';');
+      console.log(ca); // username=zyj
+      console.log('ca的长度为：%d', ca.length);
+      for(var i=0; i<ca.length; i++) {
+        var c = ca[i].trim();
+        console.log(c);
+        if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+      }
+      return "";
+    }
+    function checkCookie(){
+      var user=getCookie("username");
+      if (user!=""){
+        alert("欢迎 " + user + " 再次访问");
+      }
+      else {
+        user = prompt("请输入你的名字:","");
+        if (user!="" && user!=null){
+          setCookie("username",user,30);
+        }
+      }
+    }
+  </script>
+</head>
+
+<body onload="checkCookie()"></body>
+
 </html>

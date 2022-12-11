@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $.ajax({
+            url: "../data/test.json",//json文件位置
+            type: "GET",//请求方式为get
+            dataType: "json", //返回数据格式为json
+            success: function(data) {//请求成功完成后要执行的方法
+                //each循环 使用$.each方法遍历返回的数据date
+                $.each(data.first, function(i, item) {
+                    var str = '<div>id:' + item.id + '性别：' + item.sex + '</div>';
+                    document.write(str);
+                })
+            }
+        })
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>
