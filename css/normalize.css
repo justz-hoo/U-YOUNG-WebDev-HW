@@ -14,12 +14,12 @@ a{
 
 @font-face {
     font-family: 'iconfont';
-    src: url('fonts/webfont_7wq0s9p0p0g/webfont.eot'); /* IE9 */
-    src: url('fonts/webfont_7wq0s9p0p0g/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('fonts/webfont_7wq0s9p0p0g/webfont.woff2') format('woff2'),
-    url('fonts/webfont_7wq0s9p0p0g/webfont.woff') format('woff'), /* chrome、firefox */
-    url('fonts/webfont_7wq0s9p0p0g/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('fonts/webfont_7wq0s9p0p0g/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+    src: url('../fonts/webfont_7wq0s9p0p0g/webfont.eot'); /* IE9 */
+    src: url('../fonts/webfont_7wq0s9p0p0g/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/webfont_7wq0s9p0p0g/webfont.woff2') format('woff2'),
+    url('../fonts/webfont_7wq0s9p0p0g/webfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/webfont_7wq0s9p0p0g/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/webfont_7wq0s9p0p0g/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
 }
 
 #sidebar{
@@ -809,17 +809,17 @@ section form .actions a{
             }
 
             .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li:nth-of-type(1) a{
-                background-image: url(images/微信.png);
+                background-image: url(../images/微信.png);
             }
             .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li:nth-of-type(1) a:hover{
-                background-image: url(images/微信1.png);
+                background-image: url(../images/微信1.png);
             }
 
             .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li:nth-of-type(2) a{
-                background-image: url(images/微博.png);
+                background-image: url(../images/微博.png);
             }
             .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li:nth-of-type(2) a:hover{
-                background-image: url(images/微博1.png);
+                background-image: url(../images/微博1.png);
             }
             .split_style1 section:nth-of-type(2) .contact > li:nth-last-of-type(1) ul li:nth-of-type(3) a{
                 height: 50px;

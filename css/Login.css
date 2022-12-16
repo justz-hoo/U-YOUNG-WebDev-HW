@@ -1,5 +1,5 @@
 body {
-    background: #553e8f;
+    background: #e6cf9c;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@ body {
 }
 .pwGuide {
     position: relative;
-    width: 250px;
+    width: 300px;
     height: 160px;
     margin: 0 auto;
 }
@@ -22,14 +22,15 @@ body {
     position: absolute;
     top: 25px;
     left: 52px;
-    width: 194px;
-    height: 122px;
+    width: 290px;
+    height: 140px;
     border-radius: 6px;
     background: #fff;
     box-shadow: inset 3px 0 0 #cfdae1;
     transform: rotate(-5deg) translate3d(0, 0, 0);
     font-family: 'Special Elite', cursive;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
 }
 .pwGuide .pwList:before {
     content: '';
@@ -40,6 +41,7 @@ body {
     left: 22px;
 }
 .pwGuide .pwList ul {
+    list-style: none;
     padding: 13px 0 0 0;
 }
 .pwGuide .pwList ul li {
@@ -56,7 +58,7 @@ body {
     content: '';
     width: 100%;
     height: 3px;
-    background: #70d5b9;
+    background: #e6cf9c;
     position: absolute;
     left: 0;
     top: 3px;
@@ -85,14 +87,14 @@ body {
     margin: 60px 0 0 0;
 }
 .inp-password input {
-    background: #3a296a;
+    background: #eeeeee;
     width: 100%;
     border: 0;
     border-radius: 6px;
     font-size: 16px;
     padding: 12px 16px;
-    margin: 0;
-    color: #fff;
+    margin-bottom: 8px;
+    color: #553e8f;
 }
 .inp-password input:focus {
     outline: none;
@@ -100,7 +102,7 @@ body {
 .inp-password #showPW {
     position: absolute;
     right: 15px;
-    top: 14px;
+    top: 65px;
     line-height: 14px;
     cursor: pointer;
     color: #f6bd41;
@@ -113,6 +115,25 @@ body {
 .inp-password #showPW.hide:after {
     content: 'SHOW';
 }
+.inp-password #click{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.inp-password .click_button{
+    background-color: #eeeeee;
+    line-height: 35px;
+    text-align: center;
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    border: solid 2px;
+    color: #f6bd41;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
 .dribbble {
     position: fixed;
     right: 20px;
@@ -124,4 +145,55 @@ body {
 }
 ::-webkit-input-placeholder {
     color: #ad9ed3;
+}
+.prompt{
+    /*background-color: #eee;*/
+    margin-top: 20px;
+    width: 100%;
+}
+.prompt div:nth-of-type(1){
+    background-color: #eee;
+    height: 40px;
+    width: 28%;
+    border: solid 2px #f6bd41;
+    border-radius: 10px;
+    line-height: 36px;
+    text-align: center;
+    color: #f6bd41;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.prompt #prompt_content{
+    border: solid 2px #f6bd41;
+    height: 50px;
+    line-height: 46px;
+    background-color: #eee;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #f6bd41;
+    padding-left: 10px;
+    font-weight: bold;
+}
+#prompt_content #me{
+    cursor: pointer;
+}
+.yes_or_no{
+    background-color: #fff;
+    border: 0;
+    line-height: 14px;
+    cursor: pointer;
+    color: #f6bd41;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    width: 30px;
+    border-radius: 6px;
+}
+#yes{
+    position: relative;
+    left: 20px;
+}
+#no{
+    position: relative;
+    left: 40px;
 }

@@ -138,7 +138,7 @@ $('#login').click(function (){
                 console.log(current_user);
                 window.localStorage.curUsr = JSON.stringify(current_user);
                 $('#prompt_content').html('登陆成功，即将为您转跳');
-                setTimeout(function(){window.location.href = '../index.html'},1000);
+                setTimeout(function(){window.location.href = './index.html'},1000);
             }
             else {
                 $('#prompt_content').html('密码错误，请重新输入密码');
@@ -228,7 +228,7 @@ function sign_yes(){
     console.log('当前用户为：', current_user);
     window.localStorage.curUsr = JSON.stringify(current_user);
     $('#prompt_content').html('登陆成功，即将为您转跳');
-    setTimeout(function (){window.location.href = '../index.html';}, 1000);
+    setTimeout(function (){window.location.href = './index.html';}, 1000);
 }
 
 function sign_no(){
@@ -237,7 +237,7 @@ function sign_no(){
     current_user.state = 0;
     console.log('当前用户不登录');
     window.localStorage.curUsr = JSON.stringify(current_user);
-    setTimeout(function (){window.location.href = '../index.html';}, 1500)
+    setTimeout(function (){window.location.href = './index.html';}, 1500)
 }
 
 

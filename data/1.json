@@ -56,5 +56,14 @@
       "miles": "/",
       "accommodation": "/"
     }
+  ],
+  "prices": [
+    {
+      "price": "5480",
+      "accommodation_days": "6",
+      "tickets": "所列景点门票",
+      "cars": ["全程越野车油路费","80万旅行保险"],
+      "leaders": ["领队摄影", "司机劳务费"]
+    }
   ]
 }

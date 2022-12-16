@@ -260,10 +260,19 @@ a{
 }
 
 .details .detail1{
-    margin-top: 20px;
+    padding-top: 20px;
     display: grid;
     grid-template-rows: 40px 60px;
     border-bottom: solid 4px #e6cf9c;
+}
+.detail1 > div{
+    display: flex;
+    flex-direction: row;
+}
+
+.detail1 > div >button {
+    height: 22px;
+    margin-left: 20px;
 }
 
 .details .detail2{

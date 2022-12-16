@@ -92,6 +92,8 @@ function edit2(selected){
     $(selected).parent().parent().children("div:nth-of-type(3)").html(
         '全程' + num.val() + '晚住宿'
     );
+    price_dict.accommodation_days = num.val();
+    window.localStorage.priceDict = JSON.stringify(price_dict);
     $(selected).parent().remove();
 }
 
@@ -105,7 +107,7 @@ function show_edit(selected_date){
 function show_edit2(selected){
     $(selected).parent().append(
         '<div>' +
-        '<input type="number" value="6">' +
+        '<input type="number" value="13">' +
         '<button type="button" onclick="edit2(this)">确认修改</button>' +
         '</div>'
     )
@@ -114,9 +116,9 @@ function show_edit2(selected){
 function show_edit3(selected){
     $(selected).parent().append(
         '<div>' +
-        '&nbsp<input type="radio" name="tickets" value="部分" id="part"><label for="part">部分景点门票</label>' +
-        '&nbsp<input type="radio" name="tickets"  value="全部"  id="all" checked> <label for="all">全部景点门票</label>' +
-        '<button type="button" onclick="edit3(this)">确认修改</button>' +
+            '&nbsp<input type="radio" name="tickets" value="部分" id="part"><label for="part">部分景点门票</label>' +
+            '&nbsp<input type="radio" name="tickets"  value="全部"  id="all" checked> <label for="all">全部景点门票</label>' +
+            '<button type="button" onclick="edit3(this)">确认修改</button>' +
         '</div>'
     )
 }
@@ -126,7 +128,8 @@ function edit3(selected) {
     $(selected).parent().parent().children("div:nth-of-type(3)").html(
         str.val() + '景点门票'
     );
-    console.log(str);
+    price_dict.tickets = str.val() + '景点门票';
+    window.localStorage.priceDict = JSON.stringify(price_dict);
     $(selected).parent().remove();
 }
 
@@ -258,9 +261,8 @@ function render_plans1() {
         success: function(data) {//请求成功完成后要执行的方法
             //each循环 使用$.each方法遍历返回的数据date
             $.each(data.plan_glance, function(i, item) {
-                console.log(item.num);
                 let obj = {num:item.num, route:item.route, miles:item.miles, accommodation:item.accommodation};
-                console.log(obj);
+                // console.log(obj);
                 add_glance2(obj);
                 // 创建localstorage对象
                 plans_array.push(obj);
@@ -282,3 +284,112 @@ function render_plans2() {
         add_glance2(obj);
     }
 }
+
+if (window.localStorage.priceDict) { //存在，从localstorage里读数据并渲染
+    var price_dict = JSON.parse(window.localStorage.priceDict);
+    render_price(price_dict);
+}
+else { //不存在，从jsonfile中读文件并渲染
+    price_dict = {};
+    $.ajax({
+        url: "../data/1.json",//json文件位置
+        type: "GET",//请求方式为get
+        dataType: "json", //返回数据格式为json
+        success: function(data) {//请求成功完成后要执行的方法
+            //each循环 使用$.each方法遍历返回的数据date
+            $.each(data.prices, function(i, item) {
+                price_dict = {price:item.price, accommodation_days:item.accommodation_days,
+                tickets:item.tickets, cars:item.cars, leaders:item.leaders}
+                console.log(price_dict);
+                // 创建localstorage对象
+                window.localStorage.priceDict = JSON.stringify(price_dict);
+                // 渲染
+                render_price(price_dict);
+
+            })
+        }
+    })
+}
+
+function render_price(my_price_dict) {
+    if (my_price_dict.price && my_price_dict.accommodation_days
+    && my_price_dict.tickets && my_price_dict.cars && my_price_dict.leaders) {
+        $('.detail1 p').html(my_price_dict.price + '元起/除司机外四人一车');
+        $('#acc_days').html('全程' + my_price_dict.accommodation_days + '晚住宿');
+        $('#tickets_type').html(my_price_dict.tickets);
+        for (let i = 0; i < my_price_dict.cars.length; i++) {
+            $('#cars').after('<div class="cars_options">' + price_dict.cars[i] + '</div>');
+        }
+        for (let i = 0; i < my_price_dict.leaders.length; i++) {
+            $('#leaders').after('<div class="leaders_options">' + price_dict.leaders[i] + '</div>');
+        }
+    }
+}``
+
+function show_edit4(selected) {
+    $(selected).parent().append(
+        '<div>' +
+            '&nbsp<input type="checkbox" name="cars" id="cars_option1" value="80万旅行保险"><label for="part">80万旅行保险</label>' +
+            '&nbsp<input type="checkbox" name="cars" id="cars_options2" value="全程越野车油路费" checked> <label for="all">全程越野车油路费</label>' +
+            '<button type="button" onclick="edit4(this)">确认修改</button>' +
+        '</div>'
+    );
+}
+
+function edit4(selected) {
+    $(selected).parent().parent().children('.cars_options').remove();
+    let options = $('input[name="cars"]');
+    let cars = [];
+    for (let i = 0; i < options.length; i++){
+        if (options[i].checked) {
+            cars.push(options[i].value);
+            $('#cars').after('<div class="cars_options">' + options[i].value + '</div>');
+        }
+    }
+    $(selected).parent().remove();
+    price_dict.cars = cars;
+    window.localStorage.priceDict = JSON.stringify(price_dict);
+}
+
+function show_edit1(selected) {
+    $(selected).parent().append(
+        '<div>' +
+            '<input type="number" value="66666">' +
+            '<button type="button" onclick="edit1(this)">确认修改</button>' +
+        '</div>'
+    )
+}
+
+function edit1(selected) {
+    let price = $(selected).parent().children('input').val();
+    $(selected).parent().parent().children('p').html(
+        price + '元起/除司机外四人一车');
+    price_dict.price = price;
+    window.localStorage.priceDict = JSON.stringify(price_dict);
+}
+
+function show_edit5(selected) {
+    $(selected).parent().append(
+        '<div>' +
+            '&nbsp<input type="checkbox" name="leaders" id="leaders_option1" value="司机劳务费"><label for="part">司机劳务费</label>' +
+            '&nbsp<input type="checkbox" name="leaders" id="leaders_options2" value="领队摄影" checked> <label for="all">领队摄影</label>' +
+            '<button type="button" onclick="edit5(this)">确认修改</button>' +
+        '</div>'
+    );
+}
+
+function edit5(selected) {
+    $(selected).parent().parent().children('.leaders_options').remove();
+    let options = $('input[name="leaders"]');
+    let leaders = [];
+    for (let i = 0; i < options.length; i++){
+        if (options[i].checked) {
+            leaders.push(options[i].value);
+            $('#leaders').after('<div class="leaders_options">' + options[i].value + '</div>');
+        }
+    }
+    $(selected).parent().remove();
+    price_dict.leaders = leaders;
+    window.localStorage.priceDict = JSON.stringify(price_dict);
+}
+
