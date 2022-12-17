@@ -1,8 +1,9 @@
+var data_url = "../data/detail_1.json"
 /*@TODO：
 *   ------------------------增删亮点-----------------------*/
 var main=document.querySelector(".add_new_light select");
 var img=document.querySelector(".add_new_light .new_pic");
-let img_str = '../images/highlight/1.jpg'
+let img_str = '../images/highlight/1.jpg';
 main.onchange=function(){
     img_str = this.value
     img.setAttribute("src",this.value);
@@ -69,7 +70,7 @@ else {  //不存在
 // 从jsonfile中读取渲染
 function render_highLights1() {
     $.ajax({
-        url: "../data/1.json",//json文件位置
+        url: data_url,//json文件位置
         type: "GET",//请求方式为get
         dataType: "json", //返回数据格式为json
         success: function(data) {//请求成功完成后要执行的方法
@@ -128,7 +129,7 @@ if (window.localStorage.timeArr) { //存在
 else { //不存在
     time_array = [];
     $.ajax({
-        url: "./data/1.json",
+        url: data_url,
         type: "GET",
         dataType: "json",
         success: function (data) {
@@ -236,7 +237,7 @@ if (window.localStorage.priceDict) { //存在，从localstorage里读数据并�
 else { //不存在，从jsonfile中读文件并渲染
     price_dict = {};
     $.ajax({
-        url: "../data/1.json",//json文件位置
+        url: data_url,//json文件位置
         type: "GET",//请求方式为get
         dataType: "json", //返回数据格式为json
         success: function(data) {//请求成功完成后要执行的方法
@@ -409,7 +410,7 @@ function remove_glance(selected_row){
 // 从jsonfile中渲染
 function render_plans1() {
     $.ajax({
-        url: "../data/1.json",//json文件位置
+        url: data_url,//json文件位置
         type: "GET",//请求方式为get
         dataType: "json", //返回数据格式为json
         success: function(data) {//请求成功完成后要执行的方法
@@ -458,7 +459,7 @@ if (window.localStorage.excludedDict){
 else {
     excluded_dict = {};
     $.ajax({
-        url: "./data/1.json",
+        url: data_url,
         type: "GET",
         dataType: "json",
         success: function (data) {
