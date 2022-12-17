@@ -47,7 +47,7 @@ function checkCookie(){
         }
         else {
             // alert('您现在以游客的身份浏览，请登陆');
-            setTimeout(function (){window.location.href = 'login.html';}, 2000);
+            setTimeout(function (){window.location.href = 'login.html';}, 1000);
         }
     }
 }

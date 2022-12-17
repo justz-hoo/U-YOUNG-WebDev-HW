@@ -151,9 +151,19 @@ $('#login').click(function (){
     }
     else if ($('#usr_name').val() === ''){
         $('#prompt_content').html('用户名不能位空');
+        setTimeout(function (){
+            $('#prompt_content').html('这里是注册界面 :) 注: 点击 ' +
+                '<span id="me" style="font-size: 20px; color: #ad7c35" onclick="generate_default_usr()">' +
+                '我</span> 可以生成默认注册账号');
+        }, 1000);
     }
     else {
         $('#prompt_content').html('注册密码格式不规范，请重新输入密码');
+        setTimeout(function (){
+            $('#prompt_content').html('这里是注册界面 :) 注: 点击 ' +
+                '<span id="me" style="font-size: 20px; color: #ad7c35" onclick="generate_default_usr()">' +
+                '我</span> 可以生成默认注册账号');
+        }, 1000);
     }
 })
 
@@ -216,9 +226,19 @@ function confirm_sign(confirm_btn){
     }
     else if ($('#usr_name').val() === ''){
         $('#prompt_content').html('用户名不能为空');
+        setTimeout(function (){
+            $('#prompt_content').html('这里是注册界面 :) 注: 点击 ' +
+                '<span id="me" style="font-size: 20px; color: #ad7c35" onclick="generate_default_usr()">' +
+                '我</span> 可以生成默认注册账号');
+        }, 1000);
     }
     else {
         $('#prompt_content').html('注册密码格式不规范，请重新输入密码');
+        setTimeout(function (){
+            $('#prompt_content').html('这里是注册界面 :) 注: 点击 ' +
+                '<span id="me" style="font-size: 20px; color: #ad7c35" onclick="generate_default_usr()">' +
+                '我</span> 可以生成默认注册账号');
+        }, 1000);
     }
 }
 
