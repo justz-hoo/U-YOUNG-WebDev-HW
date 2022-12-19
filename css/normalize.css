@@ -250,6 +250,11 @@ a{
     margin-bottom: 10px;
 }
 
+#plans .travel-entry > a{
+    width: 100%;
+    height: 100%;
+}
+
 @media (max-width: 800px) {
     #plans .travel-entry {
         width: 90%;

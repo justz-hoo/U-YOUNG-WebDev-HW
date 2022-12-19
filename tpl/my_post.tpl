@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>内蒙金秋</title>
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/detail_plans.css">
-</head>
-<body>
-
 <!--sidebar-->
 <section id = "sidebar">
     <div class="sidebar">
@@ -25,7 +15,7 @@
 <!--行程名称-->
 <section id="travel_name">
     <div class="travel_name" style="background-image: url(images/1.1.jpg);">
-        <h1>内蒙金秋</h1>
+        <h1><%= title%></h1>
     </div>
 </section>
 
@@ -43,18 +33,18 @@
         </div>
         <div>
             <div>亮点详情描述</div>
-            <textarea placeholder="一半巴厘风情<br>一半加州气息<br>日月湾并不适合所有人<br>但是是嬉皮士和浪人的天堂"></textarea>
+            <textarea> 一半巴厘风情<br>一半加州气息<br>日月湾并不适合所有人<br>但是是嬉皮士和浪人的天堂 </textarea>
         </div>
         <div>
             <p>选择亮点风景图</p>
-            <select>
-                <option value="../images/highlight/1.jpg">图片1</option>
-                <option value="../images/highlight/2.jpg">图片2</option>
-                <option value="../images/highlight/3.jpg">图片3</option>
-                <option value="../images/highlight/4.jpg">图片4</option>
-                <option value="../images/highlight/5.jpg">图片5</option>
-                <option value="../images/highlight/6.jpg">图片6</option>
-                <option value="../images/highlight/7.jpg">图片7</option>
+            <select onchange="select_pic(this)">
+                <option value="./images/highlight/1.jpg">图片1</option>
+                <option value="./images/highlight/2.jpg">图片2</option>
+                <option value="./images/highlight/3.jpg">图片3</option>
+                <option value="./images/highlight/4.jpg">图片4</option>
+                <option value="./images/highlight/5.jpg">图片5</option>
+                <option value="./images/highlight/6.jpg">图片6</option>
+                <option value="./images/highlight/7.jpg">图片7</option>
             </select>
             <img class="new_pic" src="images/highlight/1.jpg">
         </div>
@@ -108,7 +98,7 @@
             <div class="detail1">
                 <h3>活动价格</h3>
                 <div>
-                    <!--                    在p添加价格说明-->
+<!--                    在p添加价格说明-->
                     <p></p>
                     <button type="button" onclick="show_edit1(this)">编辑</button>
                 </div>
@@ -118,7 +108,7 @@
                 <h3>费用包含</h3>
                 <div>
                     <div class="line">
-                        <!--                        图片-->
+<!--                        图片-->
                         <div style="background-image: url(images/住宿.png);"></div>
                         <div>住宿</div>
                         <div id="acc_days">全程6晚住宿</div>
@@ -133,15 +123,15 @@
                     <div class="line">
                         <div style="background-image: url(images/汽车.png);"></div>
                         <div id="cars">用车</div>
-                        <!--                        <div>全程越野车油路费</div>-->
-                        <!--                        <div>80万旅行保险</div>-->
+<!--                        <div>全程越野车油路费</div>-->
+<!--                        <div>80万旅行保险</div>-->
                         <button type="button" onclick="show_edit4(this)">编辑</button>
                     </div>
                     <div class="line">
                         <div style="background-image: url(images/申请导游-01.png);"></div>
                         <div id="leaders">领队</div>
-                        <!--                        <div>领队摄影</div>-->
-                        <!--                        <div>司机劳务费</div>-->
+<!--                        <div>领队摄影</div>-->
+<!--                        <div>司机劳务费</div>-->
                         <button type="button" onclick="show_edit5(this)">编辑</button>
                     </div>
                 </div>
@@ -201,7 +191,7 @@
                 </div>
                 <h2>评论区</h2>
                 <div class="contents">
-                    <!--                    在这里插入评论-->
+<!--                    在这里插入评论-->
                 </div>
             </div>
             <div class="add_comment">
@@ -218,7 +208,3 @@
         </div>
     </div>
 </section>
-</body>
-<!--<script></script>-->
-<script src="js/detail_plan.js" type="text/javascript"></script>
-</html>

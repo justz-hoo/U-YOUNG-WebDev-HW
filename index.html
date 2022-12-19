@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;">
     <title>U-YOUNG</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 </head>
@@ -15,11 +15,11 @@
     <div class="sidebar">
         <nav>
             <ul>
-                <li><a href="#main">Welcome</a></li>
-                <li><a href="#intro">Who we are</a></li>
-                <li><a href="#plans">Where we Go</a></li>
-                <li><a href="#three">Get in touch</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="#main">欢迎</a></li>
+                <li><a href="#intro">关于我们</a></li>
+                <li><a href="#plans">我们的目的地</a></li>
+                <li><a href="#three">联系我们</a></li>
+                <li><a href="login.html">登陆/注册</a></li>
             </ul>
         </nav>
     </div>
@@ -41,6 +41,7 @@
         <h1>Intro</h1>
         <div>
             <p>我们是一家专注于小众目的地的旅行公司</p>
+            <p>点击More查看网站说明</p>
             <ul class="actions">
                 <li><a href="introduction.html" class="button">More</a></li>
             </ul>
@@ -58,103 +59,103 @@
                 <a href="#" class="button">只有内蒙金秋有内容</a>
             </div>
             <div class="add_new">
-                <a href="form.html" class="button">Add New</a>
+                <a href="add_new.html" class="button">Add New</a>
             </div>
         </div>
     </div>
 
     <div class="card">
-        <div class="travel-entry">
+        <div class="travel-entry" id="plan1">
             <!--        图片-->
             <div class="img" style="background-image: url(images/image_1.jpg);"></div>
 
             <!--        文字-->
             <div class="text">
                 <div class="info">
-                    <a href="detail_1.html" target="_blank" class="pub_date">2022/9/28</a>
-                    <a href="detail_1.html" target="_blank" class="sum">366个小伙伴想去这里</a>
-                    <a href="detail_1.html" target="_blank" class="comments">评论：36</a>
+                    <a href="./detail_1.html" target="_blank" class="pub_date">2022/9/28</a>
+                    <a href="./detail_1.html" target="_blank" class="sum">366个小伙伴想去这里</a>
+                    <a href="./detail_1.html" target="_blank" class="comments" >评论：36</a>
                 </div>
                 <h3>
-                    <a href="detail_1.html" class="heading">内蒙金秋</a>
+                    <a href="./detail_1.html" class="heading">内蒙金秋</a>
                 </h3>
             </div>
         </div>
-        <div class="travel-entry">
+        <div class="travel-entry" id="plan2">
             <!--        图片-->
             <div class="img" style="background-image: url(images/image_2.jpg);"></div>
             <!--        文字-->
             <div class="text">
                 <div class="info">
-                    <a href="#" class="pub_date">2022/8/25</a>
-                    <a href="#" class="sum">66个小伙伴想去这里</a>
-                    <a href="#" class="comments">评论：6</a>
+                    <a href="./detail.html?id=2" class="pub_date" target="_blank">2022/8/25</a>
+                    <a href="./detail.html?id=2" class="sum" target="_blank">66个小伙伴想去这里</a>
+                    <a href="./detail.html?id=2" class="comments" target="_blank">评论：6</a>
                 </div>
                 <h3>
-                    <a href="#" class="heading">北疆秋色</a>
+                    <a href="./detail.html?id=2" class="heading" target="_blank">北疆秋色</a>
                 </h3>
             </div>
         </div>
-        <div class="travel-entry">
+        <div class="travel-entry" id="plan3">
             <!--        图片-->
             <div class="img" style="background-image: url(images/image_3.jpg);"></div>
             <!--        文字-->
             <div class="text">
                 <div class="info">
-                    <a href="#" class="pub_date">2022/7/26</a>
-                    <a href="#" class="sum">789个小伙伴想去这里</a>
-                    <a href="#" class="comments">评论：36</a>
+                    <a href="./detail.html?id=3" class="pub_date">2022/7/26</a>
+                    <a href="./detail.html?id=3" class="sum">789个小伙伴想去这里</a>
+                    <a href="./detail.html?id=3" class="comments">评论：36</a>
                 </div>
                 <h3>
-                    <a href="#" class="heading">火星漫游</a>
+                    <a href="./detail.html?id=3" class="heading">火星漫游</a>
                 </h3>
             </div>
         </div>
 
-        <div class="travel-entry">
+        <div class="travel-entry" id="plan4">
             <!--        图片-->
             <div class="img" style="background-image: url(images/image_4.jpg);"></div>
             <!--        文字-->
             <div class="text">
                 <div class="info">
-                    <a href="#" class="pub_date">2022/7/26</a>
-                    <a href="#" class="sum">79个小伙伴想去这里</a>
-                    <a href="#" class="comments">评论：36</a>
+                    <a href="./detail.html?id=4" class="pub_date">2022/7/26</a>
+                    <a href="./detail.html?id=4" class="sum">79个小伙伴想去这里</a>
+                    <a href="./detail.html?id=4" class="comments">评论：36</a>
                 </div>
                 <h3>
-                    <a href="#" class="heading">川西秘境</a>
+                    <a href="./detail.html?id=4" class="heading">川西秘境</a>
                 </h3>
             </div>
         </div>
 
-        <div class="travel-entry">
+        <div class="travel-entry" id="plan5">
             <!--        图片-->
             <div class="img" style="background-image: url(images/image_5.jpg);"></div>
             <!--        文字-->
             <div class="text">
                 <div class="info">
-                    <a href="#" class="pub_date">2022/7/26</a>
-                    <a href="#" class="sum">79个小伙伴想去这里</a>
-                    <a href="#" class="comments">评论：386</a>
+                    <a href="./detail.html?id=5" class="pub_date">2022/7/26</a>
+                    <a href="./detail.html?id=5" class="sum">79个小伙伴想去这里</a>
+                    <a href="./detail.html?id=5" class="comments">评论：386</a>
                 </div>
                 <h3>
-                    <a href="#" class="heading">喜马拉雅</a>
+                    <a href="./detail.html?id=5" class="heading">喜马拉雅</a>
                 </h3>
             </div>
         </div>
 
-        <div class="travel-entry">
+        <div class="travel-entry" id="plan6">
             <!--        图片-->
             <div class="img" style="background-image: url(images/image_6.jpg);"></div>
             <!--        文字-->
             <div class="text">
                 <div class="info">
-                    <a href="#" class="pub_date">2022/7/26</a>
-                    <a href="#" class="sum">79个小伙伴想去这里</a>
-                    <a href="#" class="comments">评论：386</a>
+                    <a href="./detail.html?id=6" class="pub_date">2022/7/26</a>
+                    <a href="./detail.html?id=6" class="sum">79个小伙伴想去这里</a>
+                    <a href="./detail.html?id=6" class="comments">评论：386</a>
                 </div>
                 <h3>
-                    <a href="#" class="heading">伊犁の夏</a>
+                    <a href="./detail.html?id=6" class="heading">伊犁の夏</a>
                 </h3>
             </div>
         </div>

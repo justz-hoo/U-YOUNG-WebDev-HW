@@ -1,4 +1,4 @@
-var data_url = "../data/detail_1.json"
+var data_url = "./data/detail_2.json"
 /*@TODO：
 *   ------------------------增删亮点-----------------------*/
 var main=document.querySelector(".add_new_light select");
@@ -36,9 +36,9 @@ function add_new_light(){
         '                <!--                文字-->\n' +
         '                <div class="words">\n' +
         '                    <!--                标题-->\n' +
-                             '<div class="title">' +
-                                '亮点' + num_high + '：'+ name.val() + '\n' +
-                             '</div>\n' +
+        '<div class="title">' +
+        '亮点' + num_high + '：'+ name.val() + '\n' +
+        '</div>\n' +
         '                    <!--                介绍-->\n' +
         '                    <div class="else">\n' +
         '                        <p>\n' + description.val() +
@@ -146,13 +146,13 @@ function render_time(my_array) {
     for (let i = 0; i < my_array.length; i++) {
         $('.timetable').append(
             '<div>' +
-                '<div class="old">'+
-                    '<span class="day1_old">'+ my_array[i].start_date + '</span>' +
-                    '→' +
-                    '<span class="day2_old">'+ my_array[i].end_date + '</span>' +
-                '</div>' +
-                '<button type="button" onclick="del_route(this)">删除</button>' +
-                '<button type="button" onclick="show_edit(this)">编辑</button>' +
+            '<div class="old">'+
+            '<span class="day1_old">'+ my_array[i].start_date + '</span>' +
+            '→' +
+            '<span class="day2_old">'+ my_array[i].end_date + '</span>' +
+            '</div>' +
+            '<button type="button" onclick="del_route(this)">删除</button>' +
+            '<button type="button" onclick="show_edit(this)">编辑</button>' +
             '</div>'
         )
     }
@@ -199,9 +199,9 @@ function edit_date(selected_bnt){
     window.localStorage.timeArr = JSON.stringify(time_array);
     $(selected_bnt).parent().html(
         '<div class="old">'+
-            '<span class="day1_old">'+ start_date_new +'</span>' +
-            '→' +
-            '<span class="day2_old">' + end_date_new + '</span>' +
+        '<span class="day1_old">'+ start_date_new +'</span>' +
+        '→' +
+        '<span class="day2_old">' + end_date_new + '</span>' +
         '</div>' +
         '<button type="button" onclick="del_route(this)">删除</button>' +
         '<button type="button" onclick="show_edit(this)">编辑</button>'
@@ -217,9 +217,9 @@ function add_date(){
     }
     timetable.append(
         '<div>' +
-            start_date + '→' + end_date +
-            '<button type="button" onclick="del_route(this)">删除</button>' +
-            '<button type="button" onclick="show_edit(this)">编辑</button>' +
+        start_date + '→' + end_date +
+        '<button type="button" onclick="del_route(this)">删除</button>' +
+        '<button type="button" onclick="show_edit(this)">编辑</button>' +
         '</div>'
     );
     let obj = {start_date:start_date, end_date:end_date};
@@ -271,8 +271,8 @@ function render_price(my_price_dict) {
 function show_edit1(selected) {
     $(selected).parent().append(
         '<div>' +
-            '<input type="number" value="66666">' +
-            '<button type="button" onclick="edit1(this)">确认修改</button>' +
+        '<input type="number" value="66666">' +
+        '<button type="button" onclick="edit1(this)">确认修改</button>' +
         '</div>'
     )
 }
@@ -304,9 +304,9 @@ function show_edit2(selected){
 function show_edit3(selected){
     $(selected).parent().append(
         '<div>' +
-            '&nbsp<input type="radio" name="tickets" value="部分" id="part"><label for="part">部分景点门票</label>' +
-            '&nbsp<input type="radio" name="tickets"  value="全部"  id="all" checked> <label for="all">全部景点门票</label>' +
-            '<button type="button" onclick="edit3(this)">确认修改</button>' +
+        '&nbsp<input type="radio" name="tickets" value="部分" id="part"><label for="part">部分景点门票</label>' +
+        '&nbsp<input type="radio" name="tickets"  value="全部"  id="all" checked> <label for="all">全部景点门票</label>' +
+        '<button type="button" onclick="edit3(this)">确认修改</button>' +
         '</div>'
     )
 }
@@ -322,9 +322,9 @@ function edit3(selected) {
 function show_edit4(selected) {
     $(selected).parent().append(
         '<div>' +
-            '&nbsp<input type="checkbox" name="cars" id="cars_option1" value="80万旅行保险"><label for="part">80万旅行保险</label>' +
-            '&nbsp<input type="checkbox" name="cars" id="cars_options2" value="全程越野车油路费" checked> <label for="all">全程越野车油路费</label>' +
-            '<button type="button" onclick="edit4(this)">确认修改</button>' +
+        '&nbsp<input type="checkbox" name="cars" id="cars_option1" value="80万旅行保险"><label for="part">80万旅行保险</label>' +
+        '&nbsp<input type="checkbox" name="cars" id="cars_options2" value="全程越野车油路费" checked> <label for="all">全程越野车油路费</label>' +
+        '<button type="button" onclick="edit4(this)">确认修改</button>' +
         '</div>'
     );
 }
@@ -486,8 +486,8 @@ function render_excluded(my_dict) {
 function show_edit6(selected) {
     $(selected).parent().append(
         '<div>' +
-            '<input type="text" value="曼彻斯特、巴塞罗那">' +
-            '<button type="button" onclick="edit6(this)">确认修改</button>' +
+        '<input type="text" value="曼彻斯特、巴塞罗那">' +
+        '<button type="button" onclick="edit6(this)">确认修改</button>' +
         '</div>'
     )
 }
@@ -501,8 +501,8 @@ function edit6(selected) {
 function show_edit7(selected) {
     $(selected).parent().append(
         '<div>' +
-            '<input type="text" value="干饭、看球">' +
-            '<button type="button" onclick="edit7(this)">确认修改</button>' +
+        '<input type="text" value="干饭、看球">' +
+        '<button type="button" onclick="edit7(this)">确认修改</button>' +
         '</div>'
     )
 }
@@ -516,8 +516,8 @@ function edit7(selected) {
 function show_edit8(selected) {
     $(selected).parent().append(
         '<div>' +
-            '<input type="text" value="标间or双人床的差价">' +
-            '<button type="button" onclick="edit8(this)">确认修改</button>' +
+        '<input type="text" value="标间or双人床的差价">' +
+        '<button type="button" onclick="edit8(this)">确认修改</button>' +
         '</div>'
     )
 }
@@ -554,11 +554,11 @@ function render_comments(my_array) {
     for (let i = 0; i < my_array.length; i++) {
         $(".comments .contents").append(
             '<div>'+
-                '<div style="line-height: 35px">'+ my_array[i].content+ '</div>'+
-                '<div style="display: flex; flex-direction: row; align-items: center">'+
-                    '<pre>' + my_array[i].user + '  ' + my_array[i].date + '</pre>' +
-                    '<button class="del" onclick="del_comment(this, ' + i.toString() + ')">delete</button>'+
-                '</div>' +
+            '<div style="line-height: 35px">'+ my_array[i].content+ '</div>'+
+            '<div style="display: flex; flex-direction: row; align-items: center">'+
+            '<pre>' + my_array[i].user + '  ' + my_array[i].date + '</pre>' +
+            '<button class="del" onclick="del_comment(this, ' + i.toString() + ')">delete</button>'+
+            '</div>' +
             '</div>'
         );
     }
@@ -577,11 +577,11 @@ $(document).ready(function (){
         if ($("#ccc").val()!== ""){
             $(".comments .contents").append(
                 '<div>'+
-                    '<div style="line-height: 35px">'+ $('#ccc').val()+ '</div>'+
-                    '<div style="display: flex; flex-direction: row; align-items: center">'+
-                        '<pre>' + user + '  ' + my_date+ '</pre>' +
-                        '<button class="del" onclick="del_comment(this,' + comments_array.length.toString() + ')">delete</button>'+
-                    '</div>' +
+                '<div style="line-height: 35px">'+ $('#ccc').val()+ '</div>'+
+                '<div style="display: flex; flex-direction: row; align-items: center">'+
+                '<pre>' + user + '  ' + my_date+ '</pre>' +
+                '<button class="del" onclick="del_comment(this,' + comments_array.length.toString() + ')">delete</button>'+
+                '</div>' +
                 '</div>'
             );
             let obj = {content:$('#ccc').val(), user:user, date:my_date};
