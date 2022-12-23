@@ -111,19 +111,19 @@
   },
   "detail1": {
     "title": "北疆秋色",
-    "background_url": "./images/1.2.jpg",
+    "background_url": "./images/image_2.jpg",
     "high_lights": [
       {
         "num": "1",
-        "title": "莫日格勒河",
-        "description": "流经呼伦贝尔大草原,两岸水草丰美，牛羊成群,和星星点点的蒙古包构成了一幅草原风情。因河道迂回弯曲, 被称之为”天下第一曲水“。",
-        "img_url": "../images/1.2.jpg"
+        "title": "禾木",
+        "description": "新疆的最北部，图瓦人的故乡，一个被金色白桦树林、雪山和河流包围的醉美秋色的村庄。",
+        "img_url": "../images/2.1.jpg"
       },
       {
         "num": "2",
-        "title": "额尔古纳湿地",
-        "description": " 额尔古纳湿地的直流根河从这里蜿蜒流过,形成了壮观修理的河流湿地景观。河流、湖泊、植被的颜色随四季而变，秋季时格外鲜艳浓烈。",
-        "img_url": "../images/1.3.jpg"
+        "title": "喀纳斯湖",
+        "description": "传说中的水怪之湖，登上观鱼台，远眺中、哈、俄、蒙四国边境的阿勒泰山脉。秋天的喀纳斯湖，是金色、碧蓝与雪白的三重奏。",
+        "img_url": "../images/2.2.jpg"
       }
     ],
     "plan_glance":[
@@ -131,37 +131,37 @@
         "num": "1",
         "route": "乌鲁木齐 集合",
         "miles": "/",
-        "accommodation": "住宿：乌鲁木齐四星酒店"
+        "accommodation": "乌鲁木齐市区四星酒店"
       },
       {
         "num": "2",
         "route": "乌鲁木齐-布尔津",
-        "miles": "里程：535km/6.5h",
-        "accommodation": "住宿：布尔津三星酒店"
+        "miles": "535km/6.5h",
+        "accommodation": "布尔津三星酒店"
       },
       {
         "num": "3",
         "route": "布尔津-喀纳斯",
-        "miles": "里程：250km/4h",
-        "accommodation": "住宿：莫尔道嘎酒店/木刻楞"
+        "miles": "250km/4h",
+        "accommodation": "莫尔道嘎酒店/木刻楞"
       },
       {
         "num": "4",
-        "route": "莫尔道嘎-临江屯",
-        "miles": "里程：150km/3h",
-        "accommodation": "住宿：临江屯木刻楞"
+        "route": "喀纳斯-禾木",
+        "miles": "150km/3h",
+        "accommodation": "禾木木屋"
       },
       {
         "num": "5",
-        "route": "临江屯-黑山头",
-        "miles": "里程：170km/3h",
-        "accommodation": "住宿：黑山头蒙古包/酒店"
+        "route": "禾木-布尔津",
+        "miles": "170km/3h",
+        "accommodation": "黑山头蒙古包/酒店"
       },
       {
         "num": "6",
         "route": "黑山头-满洲里",
-        "miles": "里程：250km/3.5h",
-        "accommodation": "住宿：满洲里酒店"
+        "miles": "250km/3.5h",
+        "accommodation": "满洲里酒店"
       },
       {
         "num": "7",
@@ -221,39 +221,39 @@
   },
   "detail2": {
     "title": "火星漫游",
-    "background_url": "./images/1.3.jpg",
+    "background_url": "../images/image_3.jpg",
     "high_lights": [
       {
         "num": "1",
-        "title": "莫日格勒河",
-        "description": "流经呼伦贝尔大草原,两岸水草丰美，牛羊成群,和星星点点的蒙古包构成了一幅草原风情。因河道迂回弯曲, 被称之为”天下第一曲水“。",
-        "img_url": "../images/1.2.jpg"
+        "title": "火星营地",
+        "description": "写不出简介",
+        "img_url": "../images/3.1.jpg"
       },
       {
         "num": "2",
-        "title": "额尔古纳湿地",
-        "description": " 额尔古纳湿地的直流根河从这里蜿蜒流过,形成了壮观修理的河流湿地景观。河流、湖泊、植被的颜色随四季而变，秋季时格外鲜艳浓烈。",
-        "img_url": "../images/1.3.jpg"
+        "title": "俄博魔鬼城",
+        "description": "写不出简介 + 1",
+        "img_url": "../images/3.2.jpg"
       }
     ],
     "plan_glance":[
       {
         "num": "1",
-        "route": "海拉尔 集合",
+        "route": "西宁 集合",
         "miles": "/",
-        "accommodation": "住宿：海拉尔酒店"
+        "accommodation": "/"
       },
       {
         "num": "2",
-        "route": "海拉尔-额尔古纳",
-        "miles": "里程：160km/2.5h",
-        "accommodation": "住宿：额尔古纳酒店"
+        "route": "西宁-德令哈",
+        "miles": "160km/2.5h",
+        "accommodation": "得令哈酒店"
       },
       {
         "num": "3",
-        "route": "额尔古纳-莫尔道嘎",
-        "miles": "里程：250km/4h",
-        "accommodation": "住宿：莫尔道嘎酒店/木刻楞"
+        "route": "德令哈-水上雅丹",
+        "miles": "350km/4h",
+        "accommodation": "酒店"
       },
       {
         "num": "4",
@@ -331,19 +331,19 @@
   },
   "detail3": {
     "title": "川西秘境",
-    "background_url": "./images/1.3.jpg",
+    "background_url": "./images/image_4.jpg",
     "high_lights": [
       {
         "num": "1",
-        "title": "莫日格勒河",
-        "description": "流经呼伦贝尔大草原,两岸水草丰美，牛羊成群,和星星点点的蒙古包构成了一幅草原风情。因河道迂回弯曲, 被称之为”天下第一曲水“。",
-        "img_url": "../images/1.2.jpg"
+        "title": "牛奶海",
+        "description": "被仙乃日、央迈勇、夏诺多吉三座山环抱的圣湖，镶嵌在高原上的蓝宝石。",
+        "img_url": "./images/4.1.jpg"
       },
       {
         "num": "2",
-        "title": "额尔古纳湿地",
-        "description": " 额尔古纳湿地的直流根河从这里蜿蜒流过,形成了壮观修理的河流湿地景观。河流、湖泊、植被的颜色随四季而变，秋季时格外鲜艳浓烈。",
-        "img_url": "../images/1.3.jpg"
+        "title": "稻城亚丁",
+        "description": "被雪山、峡谷、森林、湖泊及纯净的空气所环绕的香巴拉王国，蓝色星球上的最后一片净土。",
+        "img_url": "./images/4.2.jpg"
       }
     ],
     "plan_glance":[
@@ -441,74 +441,74 @@
   },
   "detail4": {
     "title": "喜马拉雅",
-    "background_url": "./images/1.3.jpg",
+    "background_url": "./images/image_5.jpg",
     "high_lights": [
       {
         "num": "1",
-        "title": "莫日格勒河",
-        "description": "流经呼伦贝尔大草原,两岸水草丰美，牛羊成群,和星星点点的蒙古包构成了一幅草原风情。因河道迂回弯曲, 被称之为”天下第一曲水“。",
-        "img_url": "../images/1.2.jpg"
+        "title": "拉萨",
+        "description": "宏伟的布达拉宫，古朴的大昭寺，打一壶甜茶，感受日光之城的信仰。",
+        "img_url": "./images/5.1.jpg"
       },
       {
         "num": "2",
-        "title": "额尔古纳湿地",
-        "description": " 额尔古纳湿地的直流根河从这里蜿蜒流过,形成了壮观修理的河流湿地景观。河流、湖泊、植被的颜色随四季而变，秋季时格外鲜艳浓烈。",
-        "img_url": "../images/1.3.jpg"
+        "title": "日托寺",
+        "description": "写不出简介",
+        "img_url": "./images/5.2.jpg"
       }
     ],
     "plan_glance":[
       {
         "num": "1",
-        "route": "海拉尔 集合",
+        "route": "拉萨 集合",
         "miles": "/",
-        "accommodation": "住宿：海拉尔酒店"
+        "accommodation": "/"
       },
       {
         "num": "2",
-        "route": "海拉尔-额尔古纳",
-        "miles": "里程：160km/2.5h",
-        "accommodation": "住宿：额尔古纳酒店"
+        "route": "拉萨-洛扎县",
+        "miles": "312km/7h",
+        "accommodation": "羊卓雍错 日托寺"
       },
       {
         "num": "3",
-        "route": "额尔古纳-莫尔道嘎",
-        "miles": "里程：250km/4h",
-        "accommodation": "住宿：莫尔道嘎酒店/木刻楞"
+        "route": "洛扎县-库拉岗日-洛扎县",
+        "miles": "110km/3h",
+        "accommodation": "库拉岗日徒步"
       },
       {
         "num": "4",
-        "route": "莫尔道嘎-临江屯",
-        "miles": "里程：150km/3h",
-        "accommodation": "住宿：临江屯木刻楞"
+        "route": "洛扎县-岗巴县",
+        "miles": "350km/5.5h",
+        "accommodation": "远眺干城章嘉"
       },
       {
         "num": "5",
-        "route": "临江屯-黑山头",
-        "miles": "里程：170km/3h",
-        "accommodation": "住宿：黑山头蒙古包/酒店"
+        "route": "岗巴县-巴松村",
+        "miles": "320km/5h",
+        "accommodation": "曲登尼玛冰川"
       },
       {
         "num": "6",
-        "route": "黑山头-满洲里",
-        "miles": "里程：250km/3.5h",
-        "accommodation": "住宿：满洲里酒店"
+        "route": "巴松村-日喀则",
+        "miles": "300km/5h",
+        "accommodation": "加乌拉山口8000米级雪山观景台"
       },
       {
         "num": "7",
-        "route": "满洲里 解散",
-        "miles": "/",
-        "accommodation": "/"
+        "route": "日喀则-拉萨解散",
+        "miles": "260km/4h",
+        "accommodation": "扎什伦布寺"
       }
     ],
     "prices": {
-      "price": "5480",
+      "price": "7280",
       "accommodation_days": "6",
       "tickets": "所列景点门票",
       "cars": ["全程越野车油路费","80万旅行保险"],
       "leaders": ["领队摄影", "司机劳务费"]
     },
     "excluded": {
-      "traffic": "呼伦贝尔、满洲里",
+      "traffic": "拉萨",
       "personal": "正餐、骑马",
       "others": "单房差、发票"
     },
@@ -551,63 +551,57 @@
   },
   "detail5": {
     "title": "伊犁の夏",
-    "background_url": "./images/1.3.jpg",
+    "background_url": "./images/image_6.jpg",
     "high_lights": [
       {
         "num": "1",
-        "title": "莫日格勒河",
-        "description": "流经呼伦贝尔大草原,两岸水草丰美，牛羊成群,和星星点点的蒙古包构成了一幅草原风情。因河道迂回弯曲, 被称之为”天下第一曲水“。",
-        "img_url": "../images/1.2.jpg"
+        "title": "塞里木湖",
+        "description": "大西洋温暖气流最后眷顾的地方，称为“大西洋的最后一滴眼泪”。夏季湖边繁花随风摇曳，天鹅在深蓝色的水面漫游。",
+        "img_url": "./images/6.1.jpg"
       },
       {
         "num": "2",
-        "title": "额尔古纳湿地",
-        "description": " 额尔古纳湿地的直流根河从这里蜿蜒流过,形成了壮观修理的河流湿地景观。河流、湖泊、植被的颜色随四季而变，秋季时格外鲜艳浓烈。",
-        "img_url": "../images/1.3.jpg"
+        "title": "琼库什台",
+        "description": "天山深处的原始牧业村落，村民以热情的哈萨克族为主，沿途随处可见起伏的雪山草原，森林花海，毡房木屋，犹如走进世外桃源。",
+        "img_url": "./images/6.2.jpg"
       }
     ],
     "plan_glance":[
       {
         "num": "1",
-        "route": "海拉尔 集合",
+        "route": "伊宁 集合",
         "miles": "/",
-        "accommodation": "住宿：海拉尔酒店"
+        "accommodation": "/"
       },
       {
         "num": "2",
-        "route": "海拉尔-额尔古纳",
-        "miles": "里程：160km/2.5h",
-        "accommodation": "住宿：额尔古纳酒店"
+        "route": "伊宁-特克斯-昭苏",
+        "miles": "220km/3.5h",
+        "accommodation": "喀拉峻轻徒步，探访游牧生活"
       },
       {
         "num": "3",
-        "route": "额尔古纳-莫尔道嘎",
-        "miles": "里程：250km/4h",
-        "accommodation": "住宿：莫尔道嘎酒店/木刻楞"
+        "route": "昭苏-夏塔-特克斯",
+        "miles": "210km/3h",
+        "accommodation": "夏塔古道"
       },
       {
         "num": "4",
-        "route": "莫尔道嘎-临江屯",
-        "miles": "里程：150km/3h",
-        "accommodation": "住宿：临江屯木刻楞"
+        "route": "特克斯-琼库什台-特克斯",
+        "miles": "180km/4h",
+        "accommodation": "琼库什台"
       },
       {
         "num": "5",
-        "route": "临江屯-黑山头",
-        "miles": "里程：170km/3h",
-        "accommodation": "住宿：黑山头蒙古包/酒店"
+        "route": "特克斯-清水河",
+        "miles": "340km/4.5h",
+        "accommodation": "果子沟 塞里木糊"
       },
       {
         "num": "6",
-        "route": "黑山头-满洲里",
-        "miles": "里程：250km/3.5h",
-        "accommodation": "住宿：满洲里酒店"
-      },
-      {
-        "num": "7",
-        "route": "满洲里 解散",
-        "miles": "/",
-        "accommodation": "/"
+        "route": "清水河-伊犁 解散",
+        "miles": "70km/1h",
+        "accommodation": "霍城薰衣草"
       }
     ],
     "prices": {
@@ -618,7 +612,7 @@
       "leaders": ["领队摄影", "司机劳务费"]
     },
     "excluded": {
-      "traffic": "呼伦贝尔、满洲里",
+      "traffic": "伊宁、乌鲁木齐",
       "personal": "正餐、骑马",
       "others": "单房差、发票"
     },
