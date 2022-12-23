@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,    v, sans-serif
+    font-family: 'PingFang SC', 'Helvetica Neue', Helvetica,v, sans-serif
 }
 
 a{
@@ -133,6 +133,7 @@ a{
 #plans{
     width: 100%;
     display: flex;
+    position: relative;
     justify-content: space-evenly;
     background-color: #eed67e;
     /*height: 800px;*/

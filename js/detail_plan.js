@@ -42,7 +42,6 @@ function render_all(objList) {
     var obj4 = _.pick(objList, ['prices', 'excluded']);
     var obj5 = _.pick(objList, ['time']);
     var obj6 = _.pick(objList, ['comments']);
-
     render("./tpl/title.ejs", $('#travel_name'), obj1, "is");
     render('./tpl/high_lights.ejs', $('#travel_highlight .cards'), obj2, "is");
     render('./tpl/travel_plans.ejs', $('#travel_plans .plan_cards'), obj3, "is");
