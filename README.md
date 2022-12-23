@@ -8,21 +8,21 @@
 
   - - 点击**sign up**按钮
     
-      <img src="D:\Code\web\U-YOUNG\images\md\image-20221223204136831.png" alt="image-20221223204136831" style="zoom:60%;" />
+      <img src=".\images\md\image-20221223204136831.png" alt="image-20221223204136831" style="zoom:60%;" />
     
     - 点击登陆/注册提示中的**“我”**自动生成账号密码
     
-      <img src="D:\Code\web\U-YOUNG\images\md\image-20221223204207203.png" alt="image-20221223204207203" style="zoom:60%;" />
+      <img src=".\images\md\image-20221223204207203.png" alt="image-20221223204207203" style="zoom:60%;" />
     
     - 点击**确认注册**按钮
     
-      <img src="D:\Code\web\U-YOUNG\images\md\image-20221223204258156.png" alt="image-20221223204258156" style="zoom:60%;" />
+      <img src=".\images\md\image-20221223204258156.png" alt="image-20221223204258156" style="zoom:60%;" />
     
     - 点击登陆注册提示中
       - **是**，以自动生成的账号登陆
       - **否**，以游客身份登陆
       
-      <img src="D:\Code\web\U-YOUNG\images\md\image-20221223204410162.png" alt="image-20221223204410162" style="zoom:60%;" />
+      <img src=".\images\md\image-20221223204410162.png" alt="image-20221223204410162" style="zoom:60%;" />
 
 - Travel一栏为列表页 ，显示了不同的                
 
