@@ -1,0 +1,17 @@
+<% detail_list.forEach(function (item, i) { %>
+    <div class="travel-entry" id="plan<% i %>">
+        <!--        图片-->
+        <div class="img" style="background-image: url(<%= item.img_url %>);"></div>
+        <!--        文字-->
+        <div class="text">
+            <div class="info">
+                <a href="./detail.html?id=<%= i %>" target="_blank" class="pub_date"> <%= item.create%> </a>
+                <a href="./detail.html?id=<%= i %>" target="_blank" class="sum"><%= item.likes%>个小伙伴想去这里</a>
+                <a href="./detail.html?id=<%= i %>" target="_blank" class="comments" >评论：<%= item.comments%></a>
+            </div>
+            <h3>
+                <a href="./detail.html?id=<%= i %>" target="_blank" class="heading"><%= item.name%></a>
+            </h3>
+        </div>
+    </div>
+<% }) %>

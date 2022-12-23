@@ -1,0 +1,22 @@
+<!--行程亮点-->
+<% high_lights.forEach(function (item, i){ %>
+    <div class="highlight_card">
+        <!--                文字-->
+        <div class="words">
+            <!--                标题-->
+            <div class="title">
+                亮点<%= item.num %>: <%=item.title%>
+
+            </div>
+            <!--                介绍-->
+            <div class="else">
+                <p>
+                    <%= item.description %>
+                </p>
+            </div>
+            <div><button type="button" onclick="del_new_light(this)">删除</button></div>
+        </div>
+        <!--                图片-->
+        <div class="pic" style="background-image: url(<%= item.img_url %>);"></div>
+    </div>
+<% }) %>

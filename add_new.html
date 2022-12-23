@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <title>form</title>
 </head>
 <body>
@@ -12,13 +13,61 @@
             <!--行程名称-->
             <div class="field">
                 <h2>行程名称</h2>
-                <input type="text" name="name" id="name">
+                <input id="name" type="text" name="name" id="name" value="去海南吗 ？">
             </div>
             <div>
                 <h2>行程图片</h2>
+                <div>
+                    <select onchange="select_pic(this)">
+                        <option value="./images/image_1.jpg">图片1</option>
+                        <option value="./images/image_2.jpg">图片2</option>
+                        <option value="./images/image_3.jpg">图片3</option>
+                        <option value="./images/image_4.jpg">图片4</option>
+                        <option value="./images/image_5.jpg">图片5</option>
+                        <option value="./images/image_6.jpg">图片6</option>
+                        <option value="./images/image_7.jpg">图片7</option>
+                        <option value="./images/image_8.jpg">图片8</option>
+                    </select>
+                    <img class="new_pic" src="./images/image_1.jpg">
+                </div>
             </div>
+            <div style="margin-top: 20px">
+                <h2>行程确定日期</h2>
+                <div>
+                    <input id="confirm_date" type="date" class="create_day" value="2022-06-01">
+                </div>
+            </div>
+        </div>
+        <div class="submit" style="margin-top: 20px">
+            <button type="button" value="" onclick="addTo_list(this)" style="cursor: pointer">提交</button>
         </div>
     </form>
 </section>
 </body>
+<script>
+    var img_str = './images/image_1.jpg';
+    function select_pic(selected) {
+        img_str = $(selected).val();
+        $(".new_pic").attr("src", img_str);
+    }
+    function addTo_list() {
+        let date = $('#confirm_date').val();
+        let name = $('#name').val();
+        if (name===null || name === '') {
+            alert("亮点名称不能为空");
+            return;
+        }
+        if (localStorage.hasOwnProperty("detail_list")) {
+            let detail_list = JSON.parse(localStorage.getItem("detail_list"));
+            let idx = detail_list.length.toString();
+            detail_list.push({id:idx, name:name, img_url:img_str, likes:"0", comments:"0", create:date});
+            localStorage.setItem("detail_list", JSON.stringify(detail_list));
+            alert("添加表单成功，即将为您返回首页");
+        }
+        else {
+            alert("添加表单失败，即将为您返回首页");
+        }
+        location.href = './index.html';
+    }
+</script>
 </html>

@@ -5,9 +5,10 @@
     <meta name="viewport"
           content="width=device-width; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;">
     <title>U-YOUNG</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css">
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./js/ejs.js"></script>
 </head>
 <body onload="checkCookie()">
 <!--sidebar-->
@@ -27,7 +28,7 @@
 
 <!--main page-->
 <section id = "main">
-    <div class="main" style="background-image: url(images/About_us.jpg);">
+    <div class="main" style="background-image: url(images/image_8.jpg);">
         <h1>U-YOUNG</h1>
         <p class = 'main_text'>If you're interested, please join us !</p>
         <p>This is </p>
@@ -55,9 +56,6 @@
     <div class="left">
         <h1>Travel</h1>
         <div class="more">
-            <div class="learn_more">
-                <a href="#" class="button">只有内蒙金秋有内容</a>
-            </div>
             <div class="add_new">
                 <a href="add_new.html" class="button">Add New</a>
             </div>
@@ -65,22 +63,7 @@
     </div>
 
     <div class="card">
-        <div class="travel-entry" id="plan1">
-            <!--        图片-->
-            <div class="img" style="background-image: url(images/image_1.jpg);"></div>
 
-            <!--        文字-->
-            <div class="text">
-                <div class="info">
-                    <a href="./detail_1.html" target="_blank" class="pub_date">2022/9/28</a>
-                    <a href="./detail_1.html" target="_blank" class="sum">366个小伙伴想去这里</a>
-                    <a href="./detail_1.html" target="_blank" class="comments" >评论：36</a>
-                </div>
-                <h3>
-                    <a href="./detail_1.html" class="heading">内蒙金秋</a>
-                </h3>
-            </div>
-        </div>
         <div class="travel-entry" id="plan2">
             <!--        图片-->
             <div class="img" style="background-image: url(images/image_2.jpg);"></div>
@@ -227,4 +210,45 @@
 </section>
 </body>
 <script src="js/main.js"></script>
+<script>
+    var detail_list;
+    if (localStorage.hasOwnProperty("detail_list")){  //存在
+        detail_list = JSON.parse(localStorage.getItem("detail_list"));
+        for (let i = 0; i < detail_list.length; i++) {
+            let str_i = i.toString();
+            if (localStorage.hasOwnProperty("detail"+str_i)) {
+                detail_list[i].likes = JSON.parse(localStorage.getItem("detail"+str_i)).comments.likes;
+                detail_list[i].comments = JSON.parse(localStorage.getItem("detail"+str_i)).comments.comments_list.length;
+            }
+        }
+        localStorage.setItem("detail_list", JSON.stringify(detail_list));
+        render('./tpl/detail_list.ejs', $('#plans .card'), detail_list, "is");
+    }
+    else {
+        // 如果LocalStorage不存在，则从获取json中使用.ajax的GET方法读取数据
+        $.ajax({
+            url: "./data/detail_list.json",//json文件位置
+            type: "GET",//请求方式为get
+            dataType: "json", //返回数据格式为json
+            success: getData //请求成功完成后要执行的方法
+        })
+
+    }
+    function getData(data) {
+        detail_list = data["detail_list"];
+        /**
+         * LocalStorage中不存在，将JSON数据存在LS中
+         */
+        localStorage.setItem("detail_list", JSON.stringify(detail_list));
+        render('./tpl/detail_list.ejs', $('#plans .card'), detail_list, "is");
+    }
+    function render(tpl_url, base, obj, type) {
+        $.get(tpl_url, function (result){
+            var html = ejs.compile(result)(obj);
+            if (type === "append") base.append(html);
+            else if (type === "prepend") base.prepend(html);
+            else if (type === "is") base.html(html);
+        })
+    }
+</script>
 </html>

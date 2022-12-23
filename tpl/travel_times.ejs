@@ -1,0 +1,12 @@
+<% time.forEach(function (item, i){ %>
+    <div>
+        <div class="old">
+            <span class="day1_old"><%= item.start_date%></span>
+            →
+            <span class="day2_old"><%= item.end_date%></span>
+        </div>
+        <button type="button" onclick="del_route(this)">删除</button>
+        <button type="button" onclick="show_edit(this)">编辑</button>
+    </div>
+<% })%>
+

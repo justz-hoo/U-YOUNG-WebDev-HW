@@ -1,0 +1,19 @@
+<table>
+    <tr>
+        <td><h2>天数</h2></td>
+        <td><p>路线</p></td>
+        <td><p>里程</p></td>
+        <td><p>住宿</p></td>
+    </tr>
+    <% plan_glance.forEach(function (item, i){ %>
+        <tr>
+            <td><p><h2>Day<%= item.num%></h2></td></td>
+            <td><p><%= item.route%></p></td>
+            <td><p><%= item.miles%></p></td>
+            <td><p><%= item.accommodation%></p></td>
+        </tr>
+    <% })%>
+    <tr>
+        <td><button type="button" onclick="remove_glance(this)">删除</button></td>
+    </tr>
+</table>

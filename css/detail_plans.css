@@ -462,3 +462,6 @@ a{
     background-color: #fffdef;
 }
 
+button{
+    cursor: pointer;
+}

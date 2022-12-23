@@ -28,7 +28,7 @@ table {
     border-collapse: collapse;
     border: solid 2px #416176;
 }
-input[type='submit']{
+button{
     height: 30px;
     width: 80px;
     margin-top: 10px;
@@ -63,7 +63,7 @@ td {
 li{
     margin-bottom: 6px;
 }
-input{
+button{
     height: 30px;
     width: 160px;
     border: solid 2px #416176;
@@ -97,4 +97,15 @@ button{
     border-radius: 15px;
     margin-top: 10px;
     background-color: #eeeadc;
+}
+
+.new_pic{
+    display: block;
+    width: 600px;
+    /*width: 60%;*/
+    height: 450px;
+    /*height: 90%;*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }

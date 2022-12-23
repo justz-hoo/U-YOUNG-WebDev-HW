@@ -1,0 +1,32 @@
+<h1>交流讨论</h1>
+<div>
+    <div class="comments">
+        <div class="likes">
+            本条旅行线路共收到<span class="number"><%= comments.likes%></span>次喜欢
+        </div>
+        <h2>评论区</h2>
+        <div class="contents">
+            <!--                    在这里插入评论-->
+            <% comments.comments_list.forEach(function (item, i){ %>
+                <div>
+                    <div style="line-height: 35px"><%= item.content%></div>
+                    <div style="display: flex; flex-direction: row; align-items: center">
+                        <pre><%= item.user%>    <%= item.date%></pre>
+                        <button class="del" onclick="del_comment(this, <%= i.toString() %>)">delete</button>
+                    </div>
+                </div>
+            <% })%>
+        </div>
+    </div>
+    <div class="add_comment">
+        <h3>我的短评</h3>
+        <div>
+            <input type="text" id='ccc' value="去旅行吧 ！">
+            <button type="button" id='post_comment' onclick="add_comment(this)">发布评论</button>
+        </div>
+        <div>
+            <button type="button" id='like' onclick=add_like()>喜欢</button>
+            <button type="button" id='dislike' onclick="add_dislike()">不喜欢</button>
+        </div>
+    </div>
+</div>

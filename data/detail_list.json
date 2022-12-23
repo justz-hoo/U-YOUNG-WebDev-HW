@@ -1,0 +1,52 @@
+{
+  "detail_list": [
+    {
+      "id": "0",
+      "name": "内蒙金秋",
+      "img_url": "./images/image_1.jpg",
+      "likes": "0",
+      "comments": "0",
+      "create": "2022-9-28"
+    },
+    {
+      "id": "1",
+      "name": "北疆秋色",
+      "img_url": "./images/image_2.jpg",
+      "likes": "0",
+      "comments": "0",
+      "create": "2022-9-28"
+    },
+    {
+      "id": "2",
+      "name": "火星漫游",
+      "img_url": "./images/image_3.jpg",
+      "likes": "0",
+      "comments": "0",
+      "create": "2022-9-28"
+    },
+    {
+      "id": "3",
+      "name": "川西秘境",
+      "img_url": "./images/image_4.jpg",
+      "likes": "0",
+      "comments": "0",
+      "create": "2022-9-28"
+    },
+    {
+      "id": "4",
+      "name": "喜马拉雅",
+      "img_url": "./images/image_5.jpg",
+      "likes": "0",
+      "comments": "0",
+      "create": "2022-9-28"
+    },
+    {
+      "id": "5",
+      "name": "伊犁の夏",
+      "img_url": "./images/image_6.jpg",
+      "likes": "0",
+      "comments": "0",
+      "create": "2022-9-28"
+    }
+  ]
+}

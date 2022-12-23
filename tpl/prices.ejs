@@ -1,0 +1,73 @@
+<div class="detail1">
+    <h3>活动价格</h3>
+    <div>
+        <!--                    在p添加价格说明-->
+        <p><%= prices.price%>元起/除司机外四人一车</p>
+        <button type="button" onclick="show_edit1(this)">编辑</button>
+    </div>
+</div>
+
+<div class="detail2">
+    <h3>费用包含</h3>
+    <div>
+        <div class="line">
+            <!--                        图片-->
+            <div style="background-image: url(images/住宿.png);"></div>
+            <div>住宿</div>
+            <div id="acc_days">全程<%= prices.accommodation_days%>晚住宿</div>
+            <button type="button" onclick="show_edit2(this)">编辑</button>
+        </div>
+        <div class="line">
+            <div style="background-image: url(images/门票.png);"></div>
+            <div>门票</div>
+            <div id="tickets_type"><%= prices.tickets%></div>
+            <button type="button" onclick="show_edit3(this)">编辑</button>
+        </div>
+        <div class="line">
+            <div style="background-image: url(images/汽车.png);"></div>
+            <div id="cars">用车</div>
+            <% prices['cars'].forEach(function (item, i) { %>
+                <div><%= item%></div>
+            <% }) %>
+            <!--                        <div>全程越野车油路费</div>-->
+            <!--                        <div>80万旅行保险</div>-->
+            <button type="button" onclick="show_edit4(this)">编辑</button>
+        </div>
+        <div class="line">
+            <div style="background-image: url(images/申请导游-01.png);"></div>
+            <div id="leaders">领队</div>
+            <% prices['leaders'].forEach(function (item, i) { %>
+                <div><%= item%></div>
+            <% }) %>
+            <!--                        <div>领队摄影</div>-->
+            <!--                        <div>司机劳务费</div>-->
+            <button type="button" onclick="show_edit5(this)">编辑</button>
+        </div>
+    </div>
+</div>
+
+<div class="detail3">
+    <h3>费用不含</h3>
+    <div>
+        <div class="line">
+            <!--                        图片-->
+            <div style="background-image: url(images/飞机.png);"></div>
+            <div>交通</div>
+            <div id="e_traffic">往返<%= excluded.traffic%>的大交通费</div>
+            <button type="button" onclick="show_edit6(this)">编辑</button>
+        </div>
+        <div class="line">
+            <div style="background-image: url(images/个人.png);"></div>
+            <div>个人</div>
+            <div id="e_personal">个人消费，<%= excluded.personal%></div>
+            <button type="button" onclick="show_edit7(this)">编辑</button>
+        </div>
+        <div class="line">
+            <div style="background-image: url(images/其他.png);"></div>
+            <div>其他</div>
+            <div id="e_others"><%= excluded.others%></div>
+            <button type="button" onclick="show_edit8(this)">编辑</button>
+        </div>
+    </div>
+</div>
+
